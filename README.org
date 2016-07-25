@@ -1,0 +1,14 @@
+* Organization
+** Annex 1: Set Theory
+   Abandoned
+** Annex 2: Algebra (S+7)
+   S+7 code and data (text files)
+** Annex 3: Combinatorics (Raymond Queneau's Cent mille milliards de poèmes)
+   Cent mille milliards de poèmes, an exercise in array manipulation.
+   - CMMP.py is a simple interactive program that generates poems based on user input.
+   - Shakespeare_Generator.py is a variation of CMMP.py using Shakespeare's sonnets.
+** Annex 4: Algorithms (Raymond Queneau's Un conte à votre facon)
+   An exercise in graph traversal.
+   - Conte2.py is an interactive program that lets the reader traverse
+     the story and then print out a graph.
+   - Depends on graphviz

@@ -1,6 +1,20 @@
 # -*- coding: utf-8 -*-
+# The poetry contained within this program is taken from Cent mille milliards de poèmes, 
+# a 1961 collection of poetry that is currently under copyright and owned by Gallimard.
+# The reason that I have chosen to include the poems in the code itself is so the data 
+# structure of Queneau's original volume is visible. See Readme for more information.
 
-CMMP_fr = [   
+from datetime import date
+from datetime import time
+from datetime import datetime
+
+import uuid
+import math
+import subprocess
+
+class Corpus:
+    
+    poems = [   
      
 [u'Le roi de la pampa retourne sa chemise', 
 u'pour la mettre à sécher aux cornes des taureaux',
@@ -150,5 +164,78 @@ u'le lâche peut arguer de sa mine pâlotte',
 u'les croque-morts sont là pour se mettre au turbin',
 u'Cela considérant ô lecteur tu suffoques',
 u'comptant tes abattis lecteur tu te disloques',
-u'toute chose pourtant doit avoir une fin']
+u'toute chose pourtant doit avoir une fin']     
 ]
+
+    def begin(self): 
+		print "Would you like to read one of Queneau's original sonnets? If yes, type 1."
+		print "Would you like to generate a pseudo-random sonnet based on your age? If yes, type 2."
+		print "Would you like to generate a pseudo-random sonnet based on your position? If yes, type 3."
+		print "Would you like to generate a pseudo-random sonnet based on your computer? If yes, type 4." 
+		choice = 0 
+		while choice ==0: 
+			choice = int(raw_input())
+			if choice == 1: 
+				return self.pick_sonnet() 
+			elif choice == 2: 
+				return self.age_sonnet()
+			elif choice == 3: 
+				return self.location_sonnet()
+			elif choice == 4:
+				return self.computer_sonnet()
+			else: 
+				print "That is not a valid choice."  
+				choice = 0
+    
+    def print_sonnet(self, sonnet):
+		for line in sonnet: 
+			print line
+			print "\n"
+    
+    def get_sonnet(self, index):
+        return self.poems[index]
+    
+    def get_line(self, sonnet, verse):
+        return self.poems[sonnet][verse]
+    
+    def generate_sonnet(self, key):
+        sonnet = []
+        for i in range(0, len(key)):
+            sonnet.append(self.get_line(int(key[i]), i))
+        return sonnet
+    
+    def get_all_verses(self, verse_number):
+        result = []
+        for i in range(0,9):
+            result.append(self.get_line(i, verse_number))
+        return result
+    
+    def pick_sonnet(self): 
+    	print "Which of Queneau's original 10 sonnets would you like to read?"
+    	key = int(raw_input())
+    	self.print_sonnet(self.get_sonnet(key - 1))
+    	
+    def computer_sonnet(self):
+		number = uuid.uuid1().int
+		key = str(number)[0:14]
+		self.print_sonnet(self.generate_sonnet(key))
+    	
+    def location_sonnet(self):
+		print "Go to <http://ctrlq.org/maps/where/>."
+		print "What is your latitude? (no negatives, to the nearest thousandth)" 
+		latitude = float(raw_input())
+		print "What is your longitude? (no negatives, to the nearest thousandth)"
+		longitude = float(raw_input())
+		key = "{:14.0f}".format(latitude*longitude*100987654321)
+		self.print_sonnet(self.generate_sonnet(key))	
+
+    def age_sonnet(self):
+		print "What is your birthday? mmddyyyy?"
+		birthday = int(raw_input())
+		key = str(birthday*birthday)[0:14] 
+		self.print_sonnet(self.generate_sonnet(key))
+		
+
+if __name__ == "__main__":
+	c = Corpus()
+	c.begin()

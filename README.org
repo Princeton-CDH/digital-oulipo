@@ -46,3 +46,4 @@ user has taken highlighted in green.
 * Installation and dependency information or instructions (if warranted)
 
 * Any known issues or customization points
+As I said above, there are a few glitches in the part of speech tagging (in the first annex) that are unrelated to my own programming, but rather the result of bugs that exist within the nltk framework itself.

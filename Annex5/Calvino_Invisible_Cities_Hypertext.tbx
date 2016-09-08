@@ -1,1452 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<tinderbox version="2" revision="10" savedBy="6.6.2" >
-<attrib Name="anything" editable="0" visibleInEditor="1" default="" >
-<attrib Name="System" parent="anything" editable="0" visibleInEditor="1" default="" >
-<attrib Name="Agent" parent="System" editable="0" visibleInEditor="1" type="4" default="false" >
-<attrib Name="AgentAction" parent="Agent" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="AgentCaseSensitive" parent="Agent" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="AgentPriority" parent="Agent" editable="1" visibleInEditor="1" type="2" canInherit="0" default="1" >
-</attrib>
-<attrib Name="AgentQuery" parent="Agent" editable="1" visibleInEditor="1" default="" >
-</attrib>
-</attrib>
-<attrib Name="Appearance" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="Badge" parent="Appearance" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="BadgeMonochrome" parent="Appearance" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="BadgeSize" parent="Appearance" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="Border" parent="Appearance" editable="1" visibleInEditor="1" type="2" default="2" >
-</attrib>
-<attrib Name="BorderBevel" parent="Appearance" editable="1" visibleInEditor="1" default="automatic" >
-</attrib>
-<attrib Name="BorderColor" parent="Appearance" editable="1" visibleInEditor="1" type="1" default="automatic" >
-</attrib>
-<attrib Name="BorderDash" parent="Appearance" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="CaptionAlignment" parent="Appearance" editable="1" visibleInEditor="1" default="left" >
-</attrib>
-<attrib Name="CaptionColor" parent="Appearance" editable="1" visibleInEditor="1" type="1" default="blue" >
-</attrib>
-<attrib Name="CaptionFont" parent="Appearance" editable="1" visibleInEditor="1" type="11" default="SketchnoteSquare" >
-</attrib>
-<attrib Name="CaptionOpacity" parent="Appearance" editable="1" visibleInEditor="1" type="2" default="100" >
-</attrib>
-<attrib Name="CaptionSize" parent="Appearance" editable="1" visibleInEditor="1" type="2" default="100" >
-</attrib>
-<attrib Name="Color" parent="Appearance" editable="1" visibleInEditor="1" type="1" default="warm gray dark" >
-</attrib>
-<attrib Name="Color2" parent="Appearance" editable="1" visibleInEditor="1" type="1" default="dark warm gray dark" >
-</attrib>
-<attrib Name="Opacity" parent="Appearance" editable="1" visibleInEditor="1" type="2" default="100" >
-</attrib>
-<attrib Name="Pattern" parent="Appearance" editable="1" visibleInEditor="1" default="plain" >
-</attrib>
-<attrib Name="PlotColor" parent="Appearance" editable="1" visibleInEditor="1" type="1" default="light green" >
-</attrib>
-<attrib Name="Shadow" parent="Appearance" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="ShadowBlur" parent="Appearance" editable="1" visibleInEditor="1" type="2" default="10" >
-</attrib>
-<attrib Name="ShadowColor" parent="Appearance" editable="1" visibleInEditor="1" type="1" default="black" >
-</attrib>
-<attrib Name="ShadowDistance" parent="Appearance" editable="1" visibleInEditor="1" type="2" default="5" >
-</attrib>
-<attrib Name="Shape" parent="Appearance" editable="1" visibleInEditor="1" default="" >
-</attrib>
-</attrib>
-<attrib Name="Events" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="DueDate" parent="Events" editable="1" visibleInEditor="1" type="5" default="never" >
-</attrib>
-<attrib Name="EndDate" parent="Events" editable="1" visibleInEditor="1" type="5" default="never" >
-</attrib>
-<attrib Name="StartDate" parent="Events" editable="1" visibleInEditor="1" type="5" default="never" >
-</attrib>
-<attrib Name="TimelineAliases" parent="Events" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="TimelineBand" parent="Events" editable="1" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="TimelineBandLabelColor" parent="Events" editable="1" visibleInEditor="1" type="1" default="black" >
-</attrib>
-<attrib Name="TimelineBandLabelOpacity" parent="Events" editable="1" visibleInEditor="1" type="2" default="25" >
-</attrib>
-<attrib Name="TimelineBandLabels" parent="Events" editable="1" visibleInEditor="1" type="10" default="" >
-</attrib>
-<attrib Name="TimelineColor" parent="Events" editable="1" visibleInEditor="1" type="1" default="lighter warm gray" >
-</attrib>
-<attrib Name="TimelineDescendants" parent="Events" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="TimelineEnd" parent="Events" editable="1" visibleInEditor="1" type="5" default="never" >
-</attrib>
-<attrib Name="TimelineEndAttribute" parent="Events" editable="1" visibleInEditor="1" default="EndDate" >
-</attrib>
-<attrib Name="TimelineGridColor" parent="Events" editable="1" visibleInEditor="1" type="1" default="#009090" >
-</attrib>
-<attrib Name="TimelineMarker" parent="Events" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="TimelineScaleColor" parent="Events" editable="1" visibleInEditor="1" type="1" default="cool gray" >
-</attrib>
-<attrib Name="TimelineScaleColor2" parent="Events" editable="1" visibleInEditor="1" type="1" default="" >
-</attrib>
-<attrib Name="TimelineStart" parent="Events" editable="1" visibleInEditor="1" type="5" default="never" >
-</attrib>
-<attrib Name="TimelineStartAttribute" parent="Events" editable="1" visibleInEditor="1" default="StartDate" >
-</attrib>
-</attrib>
-<attrib Name="General" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="AdornmentCount" parent="General" editable="0" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="Caption" parent="General" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Checked" parent="General" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="ChildCount" parent="General" editable="0" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="CleanupAction" parent="General" editable="1" visibleInEditor="1" default="grid" >
-</attrib>
-<attrib Name="Container" parent="General" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Created" parent="General" editable="0" visibleInEditor="1" type="5" canInherit="0" default="never" >
-</attrib>
-<attrib Name="Creator" parent="General" editable="0" visibleInEditor="1" kind="1" canInherit="0" default="Overboard89" >
-</attrib>
-<attrib Name="DescendantCount" parent="General" editable="0" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="DisplayExpression" parent="General" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="DisplayExpressionDisabled" parent="General" editable="1" visibleInEditor="1" type="4" canInherit="0" default="false" >
-</attrib>
-<attrib Name="DisplayName" parent="General" editable="0" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Edict" parent="General" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="EdictDisabled" parent="General" editable="1" visibleInEditor="1" type="4" canInherit="0" default="false" >
-</attrib>
-<attrib Name="File" parent="General" editable="1" visibleInEditor="1" type="3" default="" >
-</attrib>
-<attrib Name="HoverExpression" parent="General" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="HoverOpacity" parent="General" editable="1" visibleInEditor="1" type="2" default="0.5" >
-</attrib>
-<attrib Name="ID" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="InboundLinkCount" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="IsAdornment" parent="General" editable="0" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="IsAlias" parent="General" editable="0" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="IsPrototype" parent="General" editable="1" visibleInEditor="1" type="4" canInherit="0" default="false" >
-</attrib>
-<attrib Name="Modified" parent="General" editable="0" visibleInEditor="1" type="5" canInherit="0" default="never" >
-</attrib>
-<attrib Name="Name" parent="General" editable="1" visibleInEditor="1" canInherit="0" default="untitled" >
-</attrib>
-<attrib Name="OnAdd" parent="General" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="OutboundLinkCount" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="OutlineDepth" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="OutlineOrder" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="Path" parent="General" editable="0" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="PlainLinkCount" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="Private" parent="General" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="Prototype" parent="General" editable="1" visibleInEditor="1" canInherit="0" default="" >
-</attrib>
-<attrib Name="PrototypeBequeathsChildren" parent="General" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="ReadCount" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="Rule" parent="General" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="RuleDisabled" parent="General" editable="1" visibleInEditor="1" type="4" canInherit="0" default="false" >
-</attrib>
-<attrib Name="Searchable" parent="General" editable="1" visibleInEditor="1" type="4" canInherit="0" default="true" >
-</attrib>
-<attrib Name="SelectionCount" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="SiblingOrder" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="Subtitle" parent="General" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="TextLinkCount" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="WebLinkCount" parent="General" editable="0" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-</attrib>
-<attrib Name="Grid" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="GridColor" parent="Grid" editable="1" visibleInEditor="1" type="1" default="#ffffff" >
-</attrib>
-<attrib Name="GridColumns" parent="Grid" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="GridLabelFont" parent="Grid" editable="1" visibleInEditor="1" type="11" default="HelveticaNeue" >
-</attrib>
-<attrib Name="GridLabelSize" parent="Grid" editable="1" visibleInEditor="1" type="2" default="10" >
-</attrib>
-<attrib Name="GridLabels" parent="Grid" editable="1" visibleInEditor="1" type="10" default="" >
-</attrib>
-<attrib Name="GridOpacity" parent="Grid" editable="1" visibleInEditor="1" type="2" default="75" >
-</attrib>
-<attrib Name="GridRows" parent="Grid" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-</attrib>
-<attrib Name="HTML" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="HTMLBoldEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/b&gt;" >
-</attrib>
-<attrib Name="HTMLBoldStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;b&gt;" >
-</attrib>
-<attrib Name="HTMLCloud1End" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/span&gt;" >
-</attrib>
-<attrib Name="HTMLCloud1Start" parent="HTML" editable="1" visibleInEditor="1" default="&lt;span style=&quot;font-size: 0.75em&quot; &gt;" >
-</attrib>
-<attrib Name="HTMLCloud2End" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/span&gt;" >
-</attrib>
-<attrib Name="HTMLCloud2Start" parent="HTML" editable="1" visibleInEditor="1" default="&lt;span style=&quot;font-size: 1em&quot; &gt;" >
-</attrib>
-<attrib Name="HTMLCloud3End" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/span&gt;" >
-</attrib>
-<attrib Name="HTMLCloud3Start" parent="HTML" editable="1" visibleInEditor="1" default="&lt;span style=&quot;font-size: 1.4em&quot; &gt;" >
-</attrib>
-<attrib Name="HTMLCloud4End" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/span&gt;" >
-</attrib>
-<attrib Name="HTMLCloud4Start" parent="HTML" editable="1" visibleInEditor="1" default="&lt;span style=&quot;font-size: 2em&quot; &gt;" >
-</attrib>
-<attrib Name="HTMLCloud5End" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/span&gt;" >
-</attrib>
-<attrib Name="HTMLCloud5Start" parent="HTML" editable="1" visibleInEditor="1" default="&lt;span style=&quot;font-size: 2.8em&quot; &gt;" >
-</attrib>
-<attrib Name="HTMLDontExport" parent="HTML" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="HTMLEntities" parent="HTML" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="HTMLExportAfter" parent="HTML" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="HTMLExportBefore" parent="HTML" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="HTMLExportChildren" parent="HTML" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="HTMLExportCommand" parent="HTML" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="HTMLExportExtension" parent="HTML" editable="1" visibleInEditor="1" kind="9" default=".html" >
-</attrib>
-<attrib Name="HTMLExportFileName" parent="HTML" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="HTMLExportFileNameSpacer" parent="HTML" editable="1" visibleInEditor="1" default="_" >
-</attrib>
-<attrib Name="HTMLExportPath" parent="HTML" editable="0" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="HTMLExportTemplate" parent="HTML" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="HTMLFileNameLowerCase" parent="HTML" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="HTMLFileNameMaxLength" parent="HTML" editable="1" visibleInEditor="1" type="2" default="24" >
-</attrib>
-<attrib Name="HTMLFirstParagraphEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/p&gt;" >
-</attrib>
-<attrib Name="HTMLFirstParagraphStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;p&gt;" >
-</attrib>
-<attrib Name="HTMLImageEnd" parent="HTML" editable="1" visibleInEditor="1" default="&gt;" >
-</attrib>
-<attrib Name="HTMLImageStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;img" >
-</attrib>
-<attrib Name="HTMLIndentedParagraphEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/blockquote&gt;" >
-</attrib>
-<attrib Name="HTMLIndentedParagraphStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;blockquote&gt;" >
-</attrib>
-<attrib Name="HTMLItalicEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/i&gt;" >
-</attrib>
-<attrib Name="HTMLItalicStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;i&gt;" >
-</attrib>
-<attrib Name="HTMLListEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/ul&gt;" >
-</attrib>
-<attrib Name="HTMLListItemEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/li&gt;" >
-</attrib>
-<attrib Name="HTMLListItemStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;li&gt;" >
-</attrib>
-<attrib Name="HTMLListStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;ul&gt;" >
-</attrib>
-<attrib Name="HTMLMarkupText" parent="HTML" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="HTMLOrderedListEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/ol&gt;" >
-</attrib>
-<attrib Name="HTMLOrderedListStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;ol&gt;" >
-</attrib>
-<attrib Name="HTMLOverwriteImages" parent="HTML" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="HTMLParagraphEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/p&gt;" >
-</attrib>
-<attrib Name="HTMLParagraphStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;p&gt;" >
-</attrib>
-<attrib Name="HTMLQuoteHTML" parent="HTML" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="HTMLStrikeEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/strike&gt;" >
-</attrib>
-<attrib Name="HTMLStrikeStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;strike&gt;" >
-</attrib>
-<attrib Name="HTMLUnderlineEnd" parent="HTML" editable="1" visibleInEditor="1" default="&lt;/u&gt;" >
-</attrib>
-<attrib Name="HTMLUnderlineStart" parent="HTML" editable="1" visibleInEditor="1" default="&lt;u&gt;" >
-</attrib>
-<attrib Name="IsTemplate" parent="HTML" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-</attrib>
-<attrib Name="Internal" parent="System" editable="0" visibleInEditor="0" default="" >
-<attrib Name="Alias" parent="Internal" editable="0" visibleInEditor="0" type="6" default="0" >
-</attrib>
-<attrib Name="EntryScript" parent="Internal" editable="0" visibleInEditor="0" default="" >
-</attrib>
-<attrib Name="ExitScript" parent="Internal" editable="0" visibleInEditor="0" default="" >
-</attrib>
-<attrib Name="WindowPlace" parent="Internal" editable="0" visibleInEditor="0" kind="21" type="100" canInherit="0" default="Rect[ 50 50 750 1150]" >
-</attrib>
-</attrib>
-<attrib Name="Iris" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="IrisAngle" parent="Iris" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="IrisRadius" parent="Iris" editable="1" visibleInEditor="1" type="2" default="1" >
-</attrib>
-</attrib>
-<attrib Name="Map" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="Base" parent="Map" editable="1" visibleInEditor="1" type="2" default="0.5" >
-</attrib>
-<attrib Name="Bend" parent="Map" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="Direction" parent="Map" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="Fill" parent="Map" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="FillOpacity" parent="Map" editable="1" visibleInEditor="1" type="2" default="0.75" >
-</attrib>
-<attrib Name="Height" parent="Map" editable="1" visibleInEditor="1" type="2" canInherit="0" default="1.86" >
-</attrib>
-<attrib Name="InteriorScale" parent="Map" editable="1" visibleInEditor="1" kind="20" type="2" default="1.5" >
-</attrib>
-<attrib Name="LeafBase" parent="Map" editable="1" visibleInEditor="1" type="2" default="0.5" >
-</attrib>
-<attrib Name="LeafBend" parent="Map" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="LeafDirection" parent="Map" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="LeafTip" parent="Map" editable="1" visibleInEditor="1" type="2" default="0.5" >
-</attrib>
-<attrib Name="Lock" parent="Map" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="MapBackgroundColor" parent="Map" editable="1" visibleInEditor="1" kind="3" type="1" default="#f2f2ed" >
-</attrib>
-<attrib Name="MapBackgroundColor2" parent="Map" editable="1" visibleInEditor="1" kind="24" type="1" default="#f2f2ed" >
-</attrib>
-<attrib Name="MapBackgroundFill" parent="Map" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="MapBackgroundFillOpacity" parent="Map" editable="1" visibleInEditor="1" type="2" default="0.1" >
-</attrib>
-<attrib Name="MapBackgroundPattern" parent="Map" editable="1" visibleInEditor="1" kind="25" default="plain" >
-</attrib>
-<attrib Name="MapBackgroundShadow" parent="Map" editable="1" visibleInEditor="1" type="4" default="true" >
-</attrib>
-<attrib Name="MapBodyTextColor" parent="Map" editable="1" visibleInEditor="1" type="1" default="automatic" >
-</attrib>
-<attrib Name="MapBodyTextSize" parent="Map" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="MapScrollX" parent="Map" editable="1" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="MapScrollY" parent="Map" editable="1" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="MapTextSize" parent="Map" editable="1" visibleInEditor="1" type="2" default="100" >
-</attrib>
-<attrib Name="NameAlignment" parent="Map" editable="1" visibleInEditor="1" default="left" >
-</attrib>
-<attrib Name="NameBold" parent="Map" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="NameColor" parent="Map" editable="1" visibleInEditor="1" type="1" default="automatic" >
-</attrib>
-<attrib Name="NameFont" parent="Map" editable="1" visibleInEditor="1" kind="2" type="11" default="HelveticaNeue" >
-</attrib>
-<attrib Name="NameLeading" parent="Map" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="NameStrike" parent="Map" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="PlotBackgroundColor" parent="Map" editable="1" visibleInEditor="1" type="1" default="white" >
-</attrib>
-<attrib Name="PlotBackgroundOpacity" parent="Map" editable="1" visibleInEditor="1" type="2" default="50" >
-</attrib>
-<attrib Name="PlotColorList" parent="Map" editable="1" visibleInEditor="1" type="10" default="2;7;3;8;4;9;0;5;1;6" >
-</attrib>
-<attrib Name="Sticky" parent="Map" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="SubtitleColor" parent="Map" editable="1" visibleInEditor="1" type="1" default="automatic" >
-</attrib>
-<attrib Name="SubtitleOpacity" parent="Map" editable="1" visibleInEditor="1" type="2" default="50" >
-</attrib>
-<attrib Name="SubtitleSize" parent="Map" editable="1" visibleInEditor="1" type="2" default="75" >
-</attrib>
-<attrib Name="TableExpression" parent="Map" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="TableHeading" parent="Map" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Tip" parent="Map" editable="1" visibleInEditor="1" type="2" default="0.5" >
-</attrib>
-<attrib Name="TitleHeight" parent="Map" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="TitleOpacity" parent="Map" editable="1" visibleInEditor="1" type="2" default="100" >
-</attrib>
-<attrib Name="Width" parent="Map" editable="1" visibleInEditor="1" type="2" canInherit="0" default="3" >
-</attrib>
-<attrib Name="Xpos" parent="Map" editable="1" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-<attrib Name="Ypos" parent="Map" editable="1" visibleInEditor="1" type="2" canInherit="0" default="0" >
-</attrib>
-</attrib>
-<attrib Name="Net" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="AutoFetch" parent="Net" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="AutoFetchCommand" parent="Net" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="LastFetched" parent="Net" editable="0" visibleInEditor="1" type="5" canInherit="0" default="never" >
-</attrib>
-<attrib Name="NoteURL" parent="Net" editable="0" visibleInEditor="1" default="RSSItem" >
-</attrib>
-<attrib Name="RSSChannelTemplate" parent="Net" editable="1" visibleInEditor="1" default="RSSChannel" >
-</attrib>
-<attrib Name="RSSItemLimit" parent="Net" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="RSSItemTemplate" parent="Net" editable="1" visibleInEditor="1" default="RSSItem" >
-</attrib>
-<attrib Name="RawData" parent="Net" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="URL" parent="Net" editable="1" visibleInEditor="1" type="9" default="" >
-</attrib>
-<attrib Name="ViewInBrowser" parent="Net" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-</attrib>
-<attrib Name="Outline" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="OutlineBackgroundColor" parent="Outline" editable="1" visibleInEditor="1" type="1" default="automatic" >
-</attrib>
-<attrib Name="OutlineColorSwatch" parent="Outline" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="OutlineTextSize" parent="Outline" editable="1" visibleInEditor="1" type="2" default="100" >
-</attrib>
-<attrib Name="PrototypeHighlightColor" parent="Outline" editable="1" visibleInEditor="1" kind="13" type="1" default="#cceecc" >
-</attrib>
-<attrib Name="Separator" parent="Outline" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-</attrib>
-<attrib Name="People" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="AIM" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Address" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="City" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Country" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="District" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Email" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="FormattedAddress" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="FullName" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="GeocodedAddress" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Latitude" parent="People" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="Longitude" parent="People" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="Organization" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="PostalCode" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="State" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Telephone" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Twitter" parent="People" editable="1" visibleInEditor="1" default="" >
-</attrib>
-</attrib>
-<attrib Name="References" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="AccessDate" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ArticleTitle" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Author2" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Author3" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Author4" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Authors" parent="References" editable="1" visibleInEditor="1" type="8" default="" >
-</attrib>
-<attrib Name="BookTitle" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="CallNumber" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="DOI" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Edition" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ISBN" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Issue" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Journal" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Pages" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="PublicationCity" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="PublicationYear" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Publisher" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="RefFormat" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="RefKeywords" parent="References" editable="1" visibleInEditor="1" type="8" default="" >
-</attrib>
-<attrib Name="RefType" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ReferenceRIS" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ReferenceTitle" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ReferenceURL" parent="References" editable="1" visibleInEditor="1" type="9" default="" >
-</attrib>
-<attrib Name="Tags" parent="References" editable="1" visibleInEditor="1" type="8" default="" >
-</attrib>
-<attrib Name="UUID" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Volume" parent="References" editable="1" visibleInEditor="1" default="" >
-</attrib>
-</attrib>
-<attrib Name="Sandbox" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="MyBoolean" parent="Sandbox" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="MyColor" parent="Sandbox" editable="1" visibleInEditor="1" type="1" default="" >
-</attrib>
-<attrib Name="MyDate" parent="Sandbox" editable="1" visibleInEditor="1" type="5" default="never" >
-</attrib>
-<attrib Name="MyInterval" parent="Sandbox" editable="1" visibleInEditor="1" type="12" default="00:00" >
-</attrib>
-<attrib Name="MyList" parent="Sandbox" editable="1" visibleInEditor="1" type="10" default="" >
-</attrib>
-<attrib Name="MyNumber" parent="Sandbox" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="MySet" parent="Sandbox" editable="1" visibleInEditor="1" type="8" default="" >
-</attrib>
-<attrib Name="MyString" parent="Sandbox" editable="1" visibleInEditor="1" default="" >
-</attrib>
-</attrib>
-<attrib Name="Scrivener" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="ScrivenerCompileAsIs" parent="Scrivener" editable="1" visibleInEditor="0" type="4" default="false" >
-</attrib>
-<attrib Name="ScrivenerFileExtension" parent="Scrivener" editable="1" visibleInEditor="0" default="" >
-</attrib>
-<attrib Name="ScrivenerFreeformFlag" parent="Scrivener" editable="1" visibleInEditor="0" type="4" default="false" >
-</attrib>
-<attrib Name="ScrivenerID" parent="Scrivener" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ScrivenerIconFileName" parent="Scrivener" editable="1" visibleInEditor="0" default="" >
-</attrib>
-<attrib Name="ScrivenerIgnoresTitlePrefixAndSuffix" parent="Scrivener" editable="1" visibleInEditor="0" type="4" default="false" >
-</attrib>
-<attrib Name="ScrivenerIncludeInCompile" parent="Scrivener" editable="1" visibleInEditor="0" type="4" default="false" >
-</attrib>
-<attrib Name="ScrivenerIndexCardFileExension" parent="Scrivener" editable="1" visibleInEditor="0" default="" >
-</attrib>
-<attrib Name="ScrivenerKeywords" parent="Scrivener" editable="1" visibleInEditor="1" type="8" default="" >
-</attrib>
-<attrib Name="ScrivenerLabel" parent="Scrivener" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ScrivenerLabelID" parent="Scrivener" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="ScrivenerNote" parent="Scrivener" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ScrivenerNoteRTF" parent="Scrivener" editable="1" visibleInEditor="0" default="" >
-</attrib>
-<attrib Name="ScrivenerPageBreakBefore" parent="Scrivener" editable="1" visibleInEditor="0" type="4" default="false" >
-</attrib>
-<attrib Name="ScrivenerPreferredExternalApplication" parent="Scrivener" editable="1" visibleInEditor="0" default="" >
-</attrib>
-<attrib Name="ScrivenerShowSynopsisImage" parent="Scrivener" editable="1" visibleInEditor="0" type="4" default="false" >
-</attrib>
-<attrib Name="ScrivenerStatus" parent="Scrivener" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="ScrivenerStatusID" parent="Scrivener" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="ScrivenerTemplateFolder" parent="Scrivener" editable="1" visibleInEditor="0" type="4" default="false" >
-</attrib>
-<attrib Name="ScrivenerType" parent="Scrivener" editable="1" visibleInEditor="1" default="" >
-</attrib>
-</attrib>
-<attrib Name="Simplenote" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="SimplenoteKey" parent="Simplenote" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="SimplenoteModified" parent="Simplenote" editable="1" visibleInEditor="1" type="5" default="never" >
-</attrib>
-<attrib Name="SimplenoteSync" parent="Simplenote" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="SimplenoteTags" parent="Simplenote" editable="1" visibleInEditor="1" type="8" default="" >
-</attrib>
-<attrib Name="SimplenoteVersion" parent="Simplenote" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-</attrib>
-<attrib Name="Sorting" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="Sort" parent="Sorting" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="SortAlso" parent="Sorting" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="SortAlsoTransform" parent="Sorting" editable="1" visibleInEditor="1" default="case-sensitive" >
-</attrib>
-<attrib Name="SortBackward" parent="Sorting" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="SortBackwardAlso" parent="Sorting" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="SortTransform" parent="Sorting" editable="1" visibleInEditor="1" default="case-sensitive" >
-</attrib>
-</attrib>
-<attrib Name="Storyspace" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="BeforeVisit" parent="Storyspace" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="ChosenWord" parent="Storyspace" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="Deck" parent="Storyspace" editable="1" visibleInEditor="1" type="8" default="" >
-</attrib>
-<attrib Name="OnVisit" parent="Storyspace" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="Requirements" parent="Storyspace" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="ResetAction" parent="Storyspace" editable="1" visibleInEditor="1" type="7" default="" >
-</attrib>
-<attrib Name="Visits" parent="Storyspace" editable="1" visibleInEditor="1" type="2" default="0" >
-</attrib>
-</attrib>
-<attrib Name="TextFormat" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="HideKeyAttributes" parent="TextFormat" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="KeyAttributeDateFormat" parent="TextFormat" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="KeyAttributeFont" parent="TextFormat" editable="1" visibleInEditor="1" type="11" default="HelveticaNeue" >
-</attrib>
-<attrib Name="KeyAttributes" parent="TextFormat" editable="1" visibleInEditor="1" type="8" default="" >
-</attrib>
-<attrib Name="LeftMargin" parent="TextFormat" editable="1" visibleInEditor="1" type="2" default="2" >
-</attrib>
-<attrib Name="LineSpacing" parent="TextFormat" editable="1" visibleInEditor="1" type="2" default="100" >
-</attrib>
-<attrib Name="NoSpelling" parent="TextFormat" editable="1" visibleInEditor="1" kind="27" type="4" default="true" >
-</attrib>
-<attrib Name="ParagraphSpacing" parent="TextFormat" editable="1" visibleInEditor="1" kind="14" type="2" default="8" >
-</attrib>
-<attrib Name="RightMargin" parent="TextFormat" editable="1" visibleInEditor="1" type="2" default="2" >
-</attrib>
-<attrib Name="ShowTitle" parent="TextFormat" editable="1" visibleInEditor="1" kind="5" type="4" default="false" >
-</attrib>
-<attrib Name="SmartQuotes" parent="TextFormat" editable="1" visibleInEditor="1" kind="26" type="4" default="true" >
-</attrib>
-<attrib Name="Tabs" parent="TextFormat" editable="1" visibleInEditor="1" default="0.25;0.25;0.25;0.25;" >
-</attrib>
-<attrib Name="TextAlign" parent="TextFormat" editable="1" visibleInEditor="1" kind="22" default="" >
-</attrib>
-<attrib Name="TextBackgroundColor" parent="TextFormat" editable="1" visibleInEditor="1" kind="8" type="1" default="#ffffff" >
-</attrib>
-<attrib Name="TextColor" parent="TextFormat" editable="1" visibleInEditor="1" kind="7" type="1" default="#000000" >
-</attrib>
-<attrib Name="TextFont" parent="TextFormat" editable="1" visibleInEditor="1" kind="18" type="11" default="HoeflerText-Regular" >
-</attrib>
-<attrib Name="TextFontSize" parent="TextFormat" editable="1" visibleInEditor="1" kind="19" type="2" default="16" >
-</attrib>
-<attrib Name="TextPaneRatio" parent="TextFormat" editable="1" visibleInEditor="1" type="2" default="0.5" >
-</attrib>
-<attrib Name="TextPaneWidth" parent="TextFormat" editable="1" visibleInEditor="1" type="2" default="-1" >
-</attrib>
-<attrib Name="TextSidebar" parent="TextFormat" editable="1" visibleInEditor="1" kind="17" type="4" default="false" >
-</attrib>
-<attrib Name="TitleBackgroundColor" parent="TextFormat" editable="1" visibleInEditor="1" kind="12" type="1" default="#000000" >
-</attrib>
-<attrib Name="TitleFont" parent="TextFormat" editable="1" visibleInEditor="1" kind="4" type="11" default="HelveticaNeue" >
-</attrib>
-<attrib Name="TitleForegroundColor" parent="TextFormat" editable="1" visibleInEditor="1" kind="11" type="1" default="#ffffff" >
-</attrib>
-</attrib>
-<attrib Name="Textual" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="ImageCount" parent="Textual" editable="0" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="ReadOnly" parent="Textual" editable="1" visibleInEditor="1" type="4" default="false" >
-</attrib>
-<attrib Name="Text" parent="Textual" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="TextExportTemplate" parent="Textual" editable="1" visibleInEditor="1" kind="10" default="outline" >
-</attrib>
-<attrib Name="TextLength" parent="Textual" editable="0" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="WordCount" parent="Textual" editable="0" visibleInEditor="1" type="2" default="0" >
-</attrib>
-<attrib Name="Wordcount" parent="Textual" editable="0" visibleInEditor="0" type="2" default="0" >
-</attrib>
-</attrib>
-<attrib Name="Weblog" parent="System" editable="0" visibleInEditor="1" default="" >
-<attrib Name="WeblogPostID" parent="Weblog" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="mt_allow_comments" parent="Weblog" editable="1" visibleInEditor="1" type="2" default="1" >
-</attrib>
-<attrib Name="mt_allow_pings" parent="Weblog" editable="1" visibleInEditor="1" type="2" default="1" >
-</attrib>
-<attrib Name="mt_convert_breaks" parent="Weblog" editable="1" visibleInEditor="1" default="" >
-</attrib>
-<attrib Name="mt_keywords" parent="Weblog" editable="1" visibleInEditor="1" default="" >
-</attrib>
-</attrib>
-</attrib>
-<attrib Name="User" parent="anything" editable="0" visibleInEditor="1" default="" >
-</attrib>
-</attrib>
-<colors >
-<color name="0" color="#7a7978" hidden="0"  />
-<color name="1" color="#a19f9e" hidden="0"  />
-<color name="2" color="#b8b6b4" hidden="0"  />
-<color name="3" color="#c7c5c3" hidden="0"  />
-<color name="4" color="#d4d2d0" hidden="0"  />
-<color name="5" color="#dedcda" hidden="0"  />
-<color name="6" color="#e6e4e1" hidden="0"  />
-<color name="7" color="#eeebe9" hidden="0"  />
-<color name="8" color="#f4f2ef" hidden="0"  />
-<color name="9" color="#faf8f5" hidden="0"  />
-<color name="black" color="#000000" hidden="0"  />
-<color name="blue" color="#003366" hidden="0"  />
-<color name="bright blue" color="#0000ff" hidden="0"  />
-<color name="bright green" color="#00ff00" hidden="0"  />
-<color name="bright red" color="#ff0000" hidden="0"  />
-<color name="cool gray" color="#607080" hidden="0"  />
-<color name="cool gray dark" color="#505860" hidden="0"  />
-<color name="cyan" color="#006666" hidden="0"  />
-<color name="green" color="#009900" hidden="0"  />
-<color name="magenta" color="#660066" hidden="0"  />
-<color name="normal" color="#dc490b" hidden="0"  />
-<color name="orange" color="#ff8800" hidden="0"  />
-<color name="poppy" color="#ffcc66" hidden="0"  />
-<color name="red" color="#990000" hidden="0"  />
-<color name="violet" color="#330099" hidden="0"  />
-<color name="warm gray" color="#787060" hidden="0"  />
-<color name="warm gray dark" color="#605850" hidden="0"  />
-<color name="white" color="#ffffff" hidden="0"  />
-<color name="yellow" color="#cccc00" hidden="0"  />
-</colors>
-<menu name="Value" kind="stamps" >
-</menu>
-<linkTypes >
-<linkType name="*untitled" label="" visible="1" showLabel="0" required="1" color="#000000" colorString="black" style="0" arrowType="0"  />
-<linkType name="Linear Reading" visible="1" showLabel="1" required="0" color="#000000" colorString="black" style="0" arrowType="0"  />
-<linkType name="agree" visible="1" showLabel="1" required="0" color="#000000" colorString="black" style="0" arrowType="0"  />
-<linkType name="clarify" visible="1" showLabel="1" required="0" color="#000000" colorString="black" style="0" arrowType="0"  />
-<linkType name="disagree" visible="1" showLabel="1" required="0" color="#000000" colorString="black" style="0" arrowType="0"  />
-<linkType name="example" visible="1" showLabel="1" required="0" color="#000000" colorString="black" style="0" arrowType="0"  />
-<linkType name="exception" visible="1" showLabel="1" required="0" color="#000000" colorString="black" style="0" arrowType="0"  />
-<linkType name="note" visible="1" showLabel="1" required="1" color="#666666" colorString="#666666" style="0" arrowType="0"  />
-<linkType name="note+" visible="1" showLabel="1" required="1" color="#444444" colorString="#444444" style="0" arrowType="0"  />
-<linkType name="prototype" visible="0" showLabel="1" required="1" color="#993333" colorString="#993333" style="0" arrowType="0"  />
-<linkType name="response" visible="1" showLabel="1" required="0" color="#000000" colorString="black" style="0" arrowType="0"  />
-<linkType name="update" visible="1" showLabel="1" required="0" color="#000000" colorString="black" style="0" arrowType="0"  />
-</linkTypes>
-<item ID="1444239589" Creator="Overboard89" >
-<attribute name="MapScrollX" >0</attribute>
-<attribute name="MapScrollY" >0</attribute>
-<attribute name="Name" >Calvino_Invisible_Cities_Hypertext</attribute>
-<item ID="1445275156" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:14:26-04:00</attribute>
-<attribute name="Height" >3.89982697</attribute>
-<attribute name="MapScrollX" >1.680499438</attribute>
-<attribute name="MapScrollY" >1.135783493</attribute>
-<attribute name="Modified" >2015-10-19T13:29:21-04:00</attribute>
-<attribute name="Name" >...</attribute>
-<attribute name="SelectionCount" >6</attribute>
-<attribute name="Visits" >7</attribute>
-<attribute name="Width" >2.963625492</attribute>
-<attribute name="Xpos" >23.4207556</attribute>
-<attribute name="Ypos" >18.63474329</attribute>
-<text >Sent off to inspect the remote provinces, the Great Khan&apos;s envoys and tax-collectors duly returned to Kai-ping-fu and to the gardens of magnolias in whose shade Kublai strolled, listening to their long reports. The ambassadors were Persians, Armenians, Syrians, Copts, Turkomans; the emperor is he who is a foreigner to each of his subjects, and only through foreign eyes and ears could the empire manifest its existence to Kublai. In languages incomprehensible to the Khan, the envoys related information heard in languages incomprehensible to them: from this opaque, dense stridor emerged the revenues received by the imperial treasury, the first and last names of officials dismissed and decapitated, the dimensions of the canals that the narrow rivers fed in times of drought. But when the young Venetian made his report, a different communication was established between him and the emperor. Newly arrived and totally ignorant of the Levantine languages, Marco Polo coMld express himself only with gestures, leaps, cries of wonder and of horror, animal barkings or hootings, or with objects he took from his knapsacks—ostrich plumes, pea-shooters, quartzes--which he arranged in front of him like chessmen. Returning from the missions on which Kublai sent him, the ingenious foreigner improvised pantomimes that the sovereign had to interpret: one city was depicted by the leap of a fish escaping the cormorant&apos;s beak to fall into a net; another city by a naked man running through fire tmscorched; a third by a skull, its teeth gree&quot; with mold, clenchi&quot;g a rollnd, white pearl. The Great Kha&quot; deciphered the signs, bllt the co&quot;nectio&quot; between them and the places visited remained lI&quot;certai,,; he &quot;ever k&quot;ew whether Marco wished to enact a&quot; adventllre that had befallen him 0&quot; his journey, a&quot; exploit of the city&apos;s /outler, the prophecy of a&quot; astrologer, a mIlS or a charade to indicate a name. Bllt, obsCllre or obviollS as it might be, everything Marco displayed had the power of emblems, which, o&quot;ce seen, cannot be forgotten or confined. I&quot; the Khan&apos;s mind the empire was f&apos;f/Iected i&quot; a desert of labile and interchangeable data, like grains of sand, from which there appeared, for each city and province, the figures evoked by the Venetia,,&apos;s logogriphs. As the seasons passed a&quot;d his missions CO&quot;ti&quot;lIed, Marco mastered the Tartar language a&quot;d the national idioms a&quot;d tribal dialects. Now his accollnts were the most precise and detailed that the Great Khan could wish and there was no qllestio&quot; or Cllriosity which they did &quot;ot satisfy. And yet each piece of information about a place recalled to the emperor&apos;s mind that first gestllre or object with which Marco had designated the place. The new fact received a meaning from that emblem a&quot;d also added to the emblem a new meaning. Perhaps, KMblai thollght, the empire is nothi&quot;g bllt a zodiac of the mi&quot;d&apos;s phantasms. &quot;On the day when I know all the emblems,&quot; he asked MArco, &quot;shall I I;e able to possess my empire, at last?&quot; Ami the Venetian answered: &quot;Sire, do not l;elieve it. On that day you willl;e an emblem among emblems.&quot;</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC7aDAAAKwAAAAEAAADSDAAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBTZW50IG9mZiB0byBpbnNwZWN0IHRoZSByZW1vdGUgcHJvdmluY2VzLCB0aGUgR3JlYXQgS2hhbidzIGVudm95cyBhbmQgdGF4LWNvbGxlY3RvcnMgZHVseSByZXR1cm5lZCB0byBLYWktcGluZy1mdSBhbmQgdG8gdGhlIGdhcmRlbnMgb2YgbWFnbm9saWFzIGluIHdob3NlIHNoYWRlIEt1YmxhaSBzdHJvbGxlZCwgbGlzdGVuaW5nIHRvIHRoZWlyIGxvbmcgcmVwb3J0cy4gVGhlIGFtYmFzc2Fkb3JzIHdlcmUgUGVyc2lhbnMsIEFybWVuaWFucywgU3lyaWFucywgQ29wdHMsIFR1cmtvbWFuczsgdGhlIGVtcGVyb3IgaXMgaGUgd2hvIGlzIGEgZm9yZWlnbmVyIHRvIGVhY2ggb2YgaGlzIHN1YmplY3RzLCBhbmQgb25seSB0aHJvdWdoIGZvcmVpZ24gZXllcyBhbmQgZWFycyBjb3VsZCB0aGUgZW1waXJlIG1hbmlmZXN0IGl0cyBleGlzdGVuY2UgdG8gS3VibGFpLiBJbiBsYW5ndWFnZXMgaW5jb21wcmVoZW5zaWJsZSB0byB0aGUgS2hhbiwgdGhlIGVudm95cyByZWxhdGVkIGluZm9ybWF0aW9uIGhlYXJkIGluIGxhbmd1YWdlcyBpbmNvbXByZWhlbnNpYmxlIHRvIHRoZW06IGZyb20gdGhpcyBvcGFxdWUsIGRlbnNlIHN0cmlkb3IgZW1lcmdlZCB0aGUgcmV2ZW51ZXMgcmVjZWl2ZWQgYnkgdGhlIGltcGVyaWFsIHRyZWFzdXJ5LCB0aGUgZmlyc3QgYW5kIGxhc3QgbmFtZXMgb2Ygb2ZmaWNpYWxzIGRpc21pc3NlZCBhbmQgZGVjYXBpdGF0ZWQsIHRoZSBkaW1lbnNpb25zIG9mIHRoZSBjYW5hbHMgdGhhdCB0aGUgbmFycm93IHJpdmVycyBmZWQgaW4gdGltZXMgb2YgZHJvdWdodC4gQnV0IHdoZW4gdGhlIHlvdW5nIFZlbmV0aWFuIG1hZGUgaGlzIHJlcG9ydCwgYSBkaWZmZXJlbnQgY29tbXVuaWNhdGlvbiB3YXMgZXN0YWJsaXNoZWQgYmV0d2VlbiBoaW0gYW5kIHRoZSBlbXBlcm9yLiBOZXdseSBhcnJpdmVkIGFuZCB0b3RhbGx5IGlnbm9yYW50IG9mIHRoZSBMZXZhbnRpbmUgbGFuZ3VhZ2VzLCBNYXJjbyBQb2xvIGNvTWxkIGV4cHJlc3MgaGltc2VsZiBvbmx5IHdpdGggZ2VzdHVyZXMsIGxlYXBzLCBjcmllcyBvZiB3b25kZXIgYW5kIG9mIGhvcnJvciwgYW5pbWFsIGJhcmtpbmdzIG9yIGhvb3RpbmdzLCBvciB3aXRoIG9iamVjdHMgaGUgdG9vayBmcm9tIGhpcyBrbmFwc2Fja3NcJzk3b3N0cmljaCBwbHVtZXMsIHBlYS1zaG9vdGVycywgcXVhcnR6ZXMtLXdoaWNoIGhlIGFycmFuZ2VkIGluIGZyb250IG9mIGhpbSBsaWtlIGNoZXNzbWVuLiBSZXR1cm5pbmcgZnJvbSB0aGUgbWlzc2lvbnMgb24gd2hpY2ggS3VibGFpIHNlbnQgaGltLCB0aGUgaW5nZW5pb3VzIGZvcmVpZ25lciBpbXByb3Zpc2VkIHBhbnRvbWltZXMgdGhhdCB0aGUgc292ZXJlaWduIGhhZCB0byBpbnRlcnByZXQ6IG9uZSBjaXR5IHdhcyBkZXBpY3RlZCBieSB0aGUgbGVhcCBvZiBhIGZpc2ggZXNjYXBpbmcgdGhlIGNvcm1vcmFudCdzIGJlYWsgdG8gZmFsbCBpbnRvIGEgbmV0OyBhbm90aGVyIGNpdHkgYnkgYSBuYWtlZCBtYW4gcnVubmluZyB0aHJvdWdoIGZpcmUgdG1zY29yY2hlZDsgYSB0aGlyZCBieSBhIHNrdWxsLCBpdHMgdGVldGggZ3JlZSIgd2l0aCBtb2xkLCBjbGVuY2hpImcgYSByb2xsbmQsIHdoaXRlIHBlYXJsLiBUaGUgR3JlYXQgS2hhIiBkZWNpcGhlcmVkIHRoZSBzaWducywgYmxsdCB0aGUgY28ibmVjdGlvIiBiZXR3ZWVuIHRoZW0gYW5kIHRoZSBwbGFjZXMgdmlzaXRlZCByZW1haW5lZCBsSSJjZXJ0YWksLDsgaGUgImV2ZXIgayJldyB3aGV0aGVyIE1hcmNvIHdpc2hlZCB0byBlbmFjdCBhIiBhZHZlbnRsbHJlIHRoYXQgaGFkIGJlZmFsbGVuIGhpbSAwIiBoaXMgam91cm5leSwgYSIgZXhwbG9pdCBvZiB0aGUgY2l0eSdzIC9vdXRsZXIsIHRoZSBwcm9waGVjeSBvZiBhIiBhc3Ryb2xvZ2VyLCBhIG1JbFMgb3IgYSBjaGFyYWRlIHRvIGluZGljYXRlIGEgbmFtZS4gQmxsdCwgb2JzQ2xscmUgb3Igb2J2aW9sbFMgYXMgaXQgbWlnaHQgYmUsIGV2ZXJ5dGhpbmcgTWFyY28gZGlzcGxheWVkIGhhZCB0aGUgcG93ZXIgb2YgZW1ibGVtcywgd2hpY2gsIG8iY2Ugc2VlbiwgY2Fubm90IGJlIGZvcmdvdHRlbiBvciBjb25maW5lZC4gSSIgdGhlIEtoYW4ncyBtaW5kIHRoZSBlbXBpcmUgd2FzIGYnZi9JZWN0ZWQgaSIgYSBkZXNlcnQgb2YgbGFiaWxlIGFuZCBpbnRlcmNoYW5nZWFibGUgZGF0YSwgbGlrZSBncmFpbnMgb2Ygc2FuZCwgZnJvbSB3aGljaCB0aGVyZSBhcHBlYXJlZCwgZm9yIGVhY2ggY2l0eSBhbmQgcHJvdmluY2UsIHRoZSBmaWd1cmVzIGV2b2tlZCBieSB0aGUgVmVuZXRpYSwsJ3MgbG9nb2dyaXBocy4gQXMgdGhlIHNlYXNvbnMgcGFzc2VkIGEiZCBoaXMgbWlzc2lvbnMgQ08idGkibEllZCwgTWFyY28gbWFzdGVyZWQgdGhlIFRhcnRhciBsYW5ndWFnZSBhImQgdGhlIG5hdGlvbmFsIGlkaW9tcyBhImQgdHJpYmFsIGRpYWxlY3RzLiBOb3cgaGlzIGFjY29sbG50cyB3ZXJlIHRoZSBtb3N0IHByZWNpc2UgYW5kIGRldGFpbGVkIHRoYXQgdGhlIEdyZWF0IEtoYW4gY291bGQgd2lzaCBhbmQgdGhlcmUgd2FzIG5vIHFsbGVzdGlvIiBvciBDbGxyaW9zaXR5IHdoaWNoIHRoZXkgZGlkICJvdCBzYXRpc2Z5LiBBbmQgeWV0IGVhY2ggcGllY2Ugb2YgaW5mb3JtYXRpb24gYWJvdXQgYSBwbGFjZSByZWNhbGxlZCB0byB0aGUgZW1wZXJvcidzIG1pbmQgdGhhdCBmaXJzdCBnZXN0bGxyZSBvciBvYmplY3Qgd2l0aCB3aGljaCBNYXJjbyBoYWQgZGVzaWduYXRlZCB0aGUgcGxhY2UuIFRoZSBuZXcgZmFjdCByZWNlaXZlZCBhIG1lYW5pbmcgZnJvbSB0aGF0IGVtYmxlbSBhImQgYWxzbyBhZGRlZCB0byB0aGUgZW1ibGVtIGEgbmV3IG1lYW5pbmcuIFBlcmhhcHMsIEtNYmxhaSB0aG9sbGdodCwgdGhlIGVtcGlyZSBpcyBub3RoaSJnIGJsbHQgYSB6b2RpYWMgb2YgdGhlIG1pImQncyBwaGFudGFzbXMuICJPbiB0aGUgZGF5IHdoZW4gSSBrbm93IGFsbCB0aGUgZW1ibGVtcywiIGhlIGFza2VkIE1BcmNvLCAic2hhbGwgSSBJO2UgYWJsZSB0byBwb3NzZXNzIG15IGVtcGlyZSwgYXQgbGFzdD8iIEFtaSB0aGUgVmVuZXRpYW4gYW5zd2VyZWQ6ICJTaXJlLCBkbyBub3QgbDtlbGlldmUgaXQuIE9uIHRoYXQgZGF5IHlvdSB3aWxsbDtlIGFuIGVtYmxlbSBhbW9uZyBlbWJsZW1zLiJ9AQAAACMAAAABAAAABwAAAFRYVC5ydGYQAAAAcSglVrYBAAAAAAAAAAAAAA==</rtfd>
-<item ID="1445275157" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:14:51-04:00</attribute>
-<attribute name="Height" >7.969904613</attribute>
-<attribute name="Modified" >2015-10-19T13:16:55-04:00</attribute>
-<attribute name="Name" >English text</attribute>
-<attribute name="SelectionCount" >1</attribute>
-<attribute name="Visits" >1</attribute>
-<attribute name="Width" >9.757338954</attribute>
-<attribute name="Xpos" >-11.10824868</attribute>
-<attribute name="Ypos" >-16.59429278</attribute>
-<text >Kublai Khan ekes not necessarily believe everything Marco Polo says when he describes the cities visited on his expeditions, but the emperor of the Tartars does continue listening 10 the young Venetian with greater attention and curiosity than he shows any other messenger or explorer of his. In the lives of emperors there is a moment which follows pride in the boundless extension of the territories we have conquered, and the melancholy and relief of knowing we shall soon give up any thought of knowing and understanding them. There is a sense of emptiness that comes over us at evening, with the odor of the elephants after the rain and the sandalwood ashes growing cold in the braziers, a dizziness that makes rivers and mountains tremble on the fallow curves of the planispheres where they are portrayed, and rolls up, one after the other, the despatches announcing to us the collapse of the last enemy troops, from defeat to defeat, and flakes the wax of the seals of obscure kings who beseech our armies&apos; protection, offering in exchange annual tributes of precious metals, tanned hides, anti tortoise shell. It is the desperate moment when we discover that this empire, which had seemed to us the sum of all wonders, is an endless, formless ruin, that corruption’s gangrene has spread too far to be healed by our scepter, that the triumph over enemy sovereigns has made us the heirs of their long undoing. Only in Marco Polo&apos;s accounts was Kublai Khan able to discern, through the walls and towers destined to crumble, the tracery of a pattern so subtle it could escape the termites&apos; gnawing.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC4HBwAAKwAAAAEAAAD/BgAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBLdWJsYWkgS2hhbiBla2VzIG5vdCBuZWNlc3NhcmlseSBiZWxpZXZlIGV2ZXJ5dGhpbmcgTWFyY28gUG9sbyBzYXlzIHdoZW4gaGUgZGVzY3JpYmVzIHRoZSBjaXRpZXMgdmlzaXRlZCBvbiBoaXMgZXhwZWRpdGlvbnMsIGJ1dCB0aGUgZW1wZXJvciBvZiB0aGUgVGFydGFycyBkb2VzIGNvbnRpbnVlIGxpc3RlbmluZyAxMCB0aGUgeW91bmcgVmVuZXRpYW4gd2l0aCBncmVhdGVyIGF0dGVudGlvbiBhbmQgY3VyaW9zaXR5IHRoYW4gaGUgc2hvd3MgYW55IG90aGVyIG1lc3NlbmdlciBvciBleHBsb3JlciBvZiBoaXMuIEluIHRoZSBsaXZlcyBvZiBlbXBlcm9ycyB0aGVyZSBpcyBhIG1vbWVudCB3aGljaCBmb2xsb3dzIHByaWRlIGluIHRoZSBib3VuZGxlc3MgZXh0ZW5zaW9uIG9mIHRoZSB0ZXJyaXRvcmllcyB3ZSBoYXZlIGNvbnF1ZXJlZCwgYW5kIHRoZSBtZWxhbmNob2x5IGFuZCByZWxpZWYgb2Yga25vd2luZyB3ZSBzaGFsbCBzb29uIGdpdmUgdXAgYW55IHRob3VnaHQgb2Yga25vd2luZyBhbmQgdW5kZXJzdGFuZGluZyB0aGVtLiBUaGVyZSBpcyBhIHNlbnNlIG9mIGVtcHRpbmVzcyB0aGF0IGNvbWVzIG92ZXIgdXMgYXQgZXZlbmluZywgd2l0aCB0aGUgb2RvciBvZiB0aGUgZWxlcGhhbnRzIGFmdGVyIHRoZSByYWluIGFuZCB0aGUgc2FuZGFsd29vZCBhc2hlcyBncm93aW5nIGNvbGQgaW4gdGhlIGJyYXppZXJzLCBhIGRpenppbmVzcyB0aGF0IG1ha2VzIHJpdmVycyBhbmQgbW91bnRhaW5zIHRyZW1ibGUgb24gdGhlIGZhbGxvdyBjdXJ2ZXMgb2YgdGhlIHBsYW5pc3BoZXJlcyB3aGVyZSB0aGV5IGFyZSBwb3J0cmF5ZWQsIGFuZCByb2xscyB1cCwgb25lIGFmdGVyIHRoZSBvdGhlciwgdGhlIGRlc3BhdGNoZXMgYW5ub3VuY2luZyB0byB1cyB0aGUgY29sbGFwc2Ugb2YgdGhlIGxhc3QgZW5lbXkgdHJvb3BzLCBmcm9tIGRlZmVhdCB0byBkZWZlYXQsIGFuZCBmbGFrZXMgdGhlIHdheCBvZiB0aGUgc2VhbHMgb2Ygb2JzY3VyZSBraW5ncyB3aG8gYmVzZWVjaCBvdXIgYXJtaWVzJyBwcm90ZWN0aW9uLCBvZmZlcmluZyBpbiBleGNoYW5nZSBhbm51YWwgdHJpYnV0ZXMgb2YgcHJlY2lvdXMgbWV0YWxzLCB0YW5uZWQgaGlkZXMsIGFudGkgdG9ydG9pc2Ugc2hlbGwuIEl0IGlzIHRoZSBkZXNwZXJhdGUgbW9tZW50IHdoZW4gd2UgZGlzY292ZXIgdGhhdCB0aGlzIGVtcGlyZSwgd2hpY2ggaGFkIHNlZW1lZCB0byB1cyB0aGUgc3VtIG9mIGFsbCB3b25kZXJzLCBpcyBhbiBlbmRsZXNzLCBmb3JtbGVzcyBydWluLCB0aGF0IGNvcnJ1cHRpb25cJzkycyBnYW5ncmVuZSBoYXMgc3ByZWFkIHRvbyBmYXIgdG8gYmUgaGVhbGVkIGJ5IG91ciBzY2VwdGVyLCB0aGF0IHRoZSB0cml1bXBoIG92ZXIgZW5lbXkgc292ZXJlaWducyBoYXMgbWFkZSB1cyB0aGUgaGVpcnMgb2YgdGhlaXIgbG9uZyB1bmRvaW5nLiBPbmx5IGluIE1hcmNvIFBvbG8ncyBhY2NvdW50cyB3YXMgS3VibGFpIEtoYW4gYWJsZSB0byBkaXNjZXJuLCB0aHJvdWdoIHRoZSB3YWxscyBhbmQgdG93ZXJzIGRlc3RpbmVkIHRvIGNydW1ibGUsIHRoZSB0cmFjZXJ5IG9mIGEgcGF0dGVybiBzbyBzdWJ0bGUgaXQgY291bGQgZXNjYXBlIHRoZSB0ZXJtaXRlcycgZ25hd2luZy59AQAAACMAAAABAAAABwAAAFRYVC5ydGYQAAAAhyUlVrYBAAAAAAAAAAAAAA==</rtfd>
-</item>
-</item>
-<item ID="1444836143" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:40-04:00</attribute>
-<attribute name="Height" >3.913131186</attribute>
-<attribute name="Modified" >2015-10-14T11:18:32-04:00</attribute>
-<attribute name="Name" >2 Anastasia</attribute>
-<attribute name="SelectionCount" >30</attribute>
-<attribute name="Visits" >48</attribute>
-<attribute name="Width" >3.000000004</attribute>
-<attribute name="Xpos" >7.361083984</attribute>
-<attribute name="Ypos" >12.63309659</attribute>
-<item ID="1444836144" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:18:38-04:00</attribute>
-<attribute name="Height" >7.016387886</attribute>
-<attribute name="Modified" >2015-10-14T11:28:21-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >5</attribute>
-<attribute name="Visits" >9</attribute>
-<attribute name="Width" >9.411349596</attribute>
-<attribute name="Xpos" >-4.651785783</attribute>
-<attribute name="Ypos" >-7.128016228</attribute>
-<text >At the end of three days, moving southward, you come upon Anastasia, a city with concentric canals watering it and kites flying over it. I should now list the wares that can profitably be bought here: agate, onyx, chrysoprase, and other varieties of chalcedony; I should praise the flesh of the golden pheasant cooked here over fires of seasoned cherry wood and sprinkled with much sweet marjoram; and tell of the women I have seen bathing in the pool of a garden and who sometimes-it is said-invite the stranger to disrobe with them and chase them in the water. But with all this, I would not be telling you the city&apos;s true essence; for while the description of Anastasia awakens desires one at a time only to force you to stifle them, when you are in the heart of Anastasia one morning your desires waken all at once and surround you. The city appears to you as a whole where no desire is lost and of which you are a part, and since it enjoys everything you do not enjoy, you can do nothing but inhabit this desire and be content. Such is the power, sometimes called malignant, sometimes benign, that Anastasia, the treacherous city, possesses; if for eight hours a day you work as a cutter of agate, onyx, chrysoprase, your labor which gives form to desire takes from desire its form, and you believe you are enjoying Anastasia wholly when you are only its slave.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC4YBgAAKwAAAAEAAAAQBgAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBBdCB0aGUgZW5kIG9mIHRocmVlIGRheXMsIG1vdmluZyBzb3V0aHdhcmQsIHlvdSBjb21lIHVwb24gQW5hc3Rhc2lhLCBhIGNpdHkgd2l0aCBjb25jZW50cmljIGNhbmFscyB3YXRlcmluZyBpdCBhbmQga2l0ZXMgZmx5aW5nIG92ZXIgaXQuIEkgc2hvdWxkIG5vdyBsaXN0IHRoZSB3YXJlcyB0aGF0IGNhbiBwcm9maXRhYmx5IGJlIGJvdWdodCBoZXJlOiBhZ2F0ZSwgb255eCwgY2hyeXNvcHJhc2UsIGFuZCBvdGhlciB2YXJpZXRpZXMgb2YgY2hhbGNlZG9ueTsgSSBzaG91bGQgcHJhaXNlIHRoZSBmbGVzaCBvZiB0aGUgZ29sZGVuIHBoZWFzYW50IGNvb2tlZCBoZXJlIG92ZXIgZmlyZXMgb2Ygc2Vhc29uZWQgY2hlcnJ5IHdvb2QgYW5kIHNwcmlua2xlZCB3aXRoIG11Y2ggc3dlZXQgbWFyam9yYW07IGFuZCB0ZWxsIG9mIHRoZSB3b21lbiBJIGhhdmUgc2VlbiBiYXRoaW5nIGluIHRoZSBwb29sIG9mIGEgZ2FyZGVuIGFuZCB3aG8gc29tZXRpbWVzLWl0IGlzIHNhaWQtaW52aXRlIHRoZSBzdHJhbmdlciB0byBkaXNyb2JlIHdpdGggdGhlbSBhbmQgY2hhc2UgdGhlbSBpbiB0aGUgd2F0ZXIuIEJ1dCB3aXRoIGFsbCB0aGlzLCBJIHdvdWxkIG5vdCBiZSB0ZWxsaW5nIHlvdSB0aGUgY2l0eSdzIHRydWUgZXNzZW5jZTsgZm9yIHdoaWxlIHRoZSBkZXNjcmlwdGlvbiBvZiBBbmFzdGFzaWEgYXdha2VucyBkZXNpcmVzIG9uZSBhdCBhIHRpbWUgb25seSB0byBmb3JjZSB5b3UgdG8gc3RpZmxlIHRoZW0sIHdoZW4geW91IGFyZSBpbiB0aGUgaGVhcnQgb2YgQW5hc3Rhc2lhIG9uZSBtb3JuaW5nIHlvdXIgZGVzaXJlcyB3YWtlbiBhbGwgYXQgb25jZSBhbmQgc3Vycm91bmQgeW91LiBUaGUgY2l0eSBhcHBlYXJzIHRvIHlvdSBhcyBhIHdob2xlIHdoZXJlIG5vIGRlc2lyZSBpcyBsb3N0IGFuZCBvZiB3aGljaCB5b3UgYXJlIGEgcGFydCwgYW5kIHNpbmNlIGl0IGVuam95cyBldmVyeXRoaW5nIHlvdSBkbyBub3QgZW5qb3ksIHlvdSBjYW4gZG8gbm90aGluZyBidXQgaW5oYWJpdCB0aGlzIGRlc2lyZSBhbmQgYmUgY29udGVudC4gU3VjaCBpcyB0aGUgcG93ZXIsIHNvbWV0aW1lcyBjYWxsZWQgbWFsaWduYW50LCBzb21ldGltZXMgYmVuaWduLCB0aGF0IEFuYXN0YXNpYSwgdGhlIHRyZWFjaGVyb3VzIGNpdHksIHBvc3Nlc3NlczsgaWYgZm9yIGVpZ2h0IGhvdXJzIGEgZGF5IHlvdSB3b3JrIGFzIGEgY3V0dGVyIG9mIGFnYXRlLCBvbnl4LCBjaHJ5c29wcmFzZSwgeW91ciBsYWJvciB3aGljaCBnaXZlcyBmb3JtIHRvIGRlc2lyZSB0YWtlcyBmcm9tIGRlc2lyZSBpdHMgZm9ybSwgYW5kIHlvdSBiZWxpZXZlIHlvdSBhcmUgZW5qb3lpbmcgQW5hc3Rhc2lhIHdob2xseSB3aGVuIHlvdSBhcmUgb25seSBpdHMgc2xhdmUufQEAAAAjAAAAAQAAAAcAAABUWFQucnRmEAAAAJV0Hla2AQAAAAAAAAAAAAA=</rtfd>
-</item>
-<item ID="1444837039" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Height" >5.957106507</attribute>
-<attribute name="Modified" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >3</attribute>
-<attribute name="Visits" >5</attribute>
-<attribute name="Width" >9.411349596</attribute>
-<attribute name="Xpos" >-4.651785783</attribute>
-<attribute name="Ypos" >0.7684029702</attribute>
-</item>
-</item>
-<item ID="1444837040" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:40-04:00</attribute>
-<attribute name="Height" >3.913131186</attribute>
-<attribute name="Modified" >2015-10-14T11:18:32-04:00</attribute>
-<attribute name="Name" >1 Tamara</attribute>
-<attribute name="SelectionCount" >35</attribute>
-<attribute name="Visits" >53</attribute>
-<attribute name="Width" >3.000000004</attribute>
-<attribute name="Xpos" >12.78099695</attribute>
-<attribute name="Ypos" >12.63309659</attribute>
-<item ID="1444837041" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:18:38-04:00</attribute>
-<attribute name="Height" >12.29200799</attribute>
-<attribute name="Modified" >2015-10-14T11:41:08-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >9</attribute>
-<attribute name="Visits" >17</attribute>
-<attribute name="Width" >11.07715527</attribute>
-<attribute name="Xpos" >-6.410481858</attribute>
-<attribute name="Ypos" >-10.56964769</attribute>
-<text >You walk for days among trees and among stones. Rarely does the eye light on a thing, and then only when it has recognized that thing as the sign of another thing: a print in the sand indicates the tiger&apos;s passage; a marsh announces a vein of water; the hibiscus flower, the end of winter. All the rest is silent and interchangeable; trees and stones are only what they are. 
-
-Finally the journey leads to the city of Tamara. You penetrate it along streets thick with signboards jutting from the walls. The eye does not see things but images of things that mean other things: pincers point out the tooth-drawer&apos;s house; a tankard, the tavern; halberds, the barracks; scales, the grocer&apos;s. Statues and shields depict lions, dolphins, towers, stars: a sign that something-who knows what?- has as its sign a lion or a dolphin or a tower or a star. Other signals warn of what is forbidden in a given place (to enter the alley with wagons, to urinate behind the kiosk, to fish with your pole from the bridge) and what is allowed (watering zebras, playing bowls, burning relatives&apos; corpses). From the doors of the temples the gods&apos; statues are seen, each portrayed with his attributes-the cornucopia, the hourglass, the medusa-so that the worshiper can recognize them and address his prayers correctly. If a bUilding has no signboard or figure, its very form and the position it occupies in the city&apos;s order suffice to indicate its function: the palace, the prison, the mint, the Pythagorean school, the brothel. The wares, too, which the vendors display on their stalls are valuable not in themselves but as signs of other things: the embroidered headband stands for elegance; the gilded palanquin, power; the volumes of Averroes, learning; the ankle bracelet, voluptuousness. Your gaze scans the streets as if they were written pages: the city says everything you must think, makes you repeat her discourse, and while you believe you are visiting Tamara you are only recording the names with which she defines herself and all her parts. 
-
-However the city may really be, beneath this thick coating of signs, whatever it may contain or conceal, you leave Tamara without having discovered it. Outside, the land stretches, empty, to the horizon; the sky opens, with speeding clouds. In the shape that chance and wind give the clouds, you are already intent on recognizing figures: a sailing ship, a hand, an elephant…</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC4zCgAAKwAAAAEAAAArCgAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBZb3Ugd2FsayBmb3IgZGF5cyBhbW9uZyB0cmVlcyBhbmQgYW1vbmcgc3RvbmVzLiBSYXJlbHkgZG9lcyB0aGUgZXllIGxpZ2h0IG9uIGEgdGhpbmcsIGFuZCB0aGVuIG9ubHkgd2hlbiBpdCBoYXMgcmVjb2duaXplZCB0aGF0IHRoaW5nIGFzIHRoZSBzaWduIG9mIGFub3RoZXIgdGhpbmc6IGEgcHJpbnQgaW4gdGhlIHNhbmQgaW5kaWNhdGVzIHRoZSB0aWdlcidzIHBhc3NhZ2U7IGEgbWFyc2ggYW5ub3VuY2VzIGEgdmVpbiBvZiB3YXRlcjsgdGhlIGhpYmlzY3VzIGZsb3dlciwgdGhlIGVuZCBvZiB3aW50ZXIuIEFsbCB0aGUgcmVzdCBpcyBzaWxlbnQgYW5kIGludGVyY2hhbmdlYWJsZTsgdHJlZXMgYW5kIHN0b25lcyBhcmUgb25seSB3aGF0IHRoZXkgYXJlLiBcClwKRmluYWxseSB0aGUgam91cm5leSBsZWFkcyB0byB0aGUgY2l0eSBvZiBUYW1hcmEuIFlvdSBwZW5ldHJhdGUgaXQgYWxvbmcgc3RyZWV0cyB0aGljayB3aXRoIHNpZ25ib2FyZHMganV0dGluZyBmcm9tIHRoZSB3YWxscy4gVGhlIGV5ZSBkb2VzIG5vdCBzZWUgdGhpbmdzIGJ1dCBpbWFnZXMgb2YgdGhpbmdzIHRoYXQgbWVhbiBvdGhlciB0aGluZ3M6IHBpbmNlcnMgcG9pbnQgb3V0IHRoZSB0b290aC1kcmF3ZXIncyBob3VzZTsgYSB0YW5rYXJkLCB0aGUgdGF2ZXJuOyBoYWxiZXJkcywgdGhlIGJhcnJhY2tzOyBzY2FsZXMsIHRoZSBncm9jZXIncy4gU3RhdHVlcyBhbmQgc2hpZWxkcyBkZXBpY3QgbGlvbnMsIGRvbHBoaW5zLCB0b3dlcnMsIHN0YXJzOiBhIHNpZ24gdGhhdCBzb21ldGhpbmctd2hvIGtub3dzIHdoYXQ/LSBoYXMgYXMgaXRzIHNpZ24gYSBsaW9uIG9yIGEgZG9scGhpbiBvciBhIHRvd2VyIG9yIGEgc3Rhci4gT3RoZXIgc2lnbmFscyB3YXJuIG9mIHdoYXQgaXMgZm9yYmlkZGVuIGluIGEgZ2l2ZW4gcGxhY2UgKHRvIGVudGVyIHRoZSBhbGxleSB3aXRoIHdhZ29ucywgdG8gdXJpbmF0ZSBiZWhpbmQgdGhlIGtpb3NrLCB0byBmaXNoIHdpdGggeW91ciBwb2xlIGZyb20gdGhlIGJyaWRnZSkgYW5kIHdoYXQgaXMgYWxsb3dlZCAod2F0ZXJpbmcgemVicmFzLCBwbGF5aW5nIGJvd2xzLCBidXJuaW5nIHJlbGF0aXZlcycgY29ycHNlcykuIEZyb20gdGhlIGRvb3JzIG9mIHRoZSB0ZW1wbGVzIHRoZSBnb2RzJyBzdGF0dWVzIGFyZSBzZWVuLCBlYWNoIHBvcnRyYXllZCB3aXRoIGhpcyBhdHRyaWJ1dGVzLXRoZSBjb3JudWNvcGlhLCB0aGUgaG91cmdsYXNzLCB0aGUgbWVkdXNhLXNvIHRoYXQgdGhlIHdvcnNoaXBlciBjYW4gcmVjb2duaXplIHRoZW0gYW5kIGFkZHJlc3MgaGlzIHByYXllcnMgY29ycmVjdGx5LiBJZiBhIGJVaWxkaW5nIGhhcyBubyBzaWduYm9hcmQgb3IgZmlndXJlLCBpdHMgdmVyeSBmb3JtIGFuZCB0aGUgcG9zaXRpb24gaXQgb2NjdXBpZXMgaW4gdGhlIGNpdHkncyBvcmRlciBzdWZmaWNlIHRvIGluZGljYXRlIGl0cyBmdW5jdGlvbjogdGhlIHBhbGFjZSwgdGhlIHByaXNvbiwgdGhlIG1pbnQsIHRoZSBQeXRoYWdvcmVhbiBzY2hvb2wsIHRoZSBicm90aGVsLiBUaGUgd2FyZXMsIHRvbywgd2hpY2ggdGhlIHZlbmRvcnMgZGlzcGxheSBvbiB0aGVpciBzdGFsbHMgYXJlIHZhbHVhYmxlIG5vdCBpbiB0aGVtc2VsdmVzIGJ1dCBhcyBzaWducyBvZiBvdGhlciB0aGluZ3M6IHRoZSBlbWJyb2lkZXJlZCBoZWFkYmFuZCBzdGFuZHMgZm9yIGVsZWdhbmNlOyB0aGUgZ2lsZGVkIHBhbGFucXVpbiwgcG93ZXI7IHRoZSB2b2x1bWVzIG9mIEF2ZXJyb2VzLCBsZWFybmluZzsgdGhlIGFua2xlIGJyYWNlbGV0LCB2b2x1cHR1b3VzbmVzcy4gWW91ciBnYXplIHNjYW5zIHRoZSBzdHJlZXRzIGFzIGlmIHRoZXkgd2VyZSB3cml0dGVuIHBhZ2VzOiB0aGUgY2l0eSBzYXlzIGV2ZXJ5dGhpbmcgeW91IG11c3QgdGhpbmssIG1ha2VzIHlvdSByZXBlYXQgaGVyIGRpc2NvdXJzZSwgYW5kIHdoaWxlIHlvdSBiZWxpZXZlIHlvdSBhcmUgdmlzaXRpbmcgVGFtYXJhIHlvdSBhcmUgb25seSByZWNvcmRpbmcgdGhlIG5hbWVzIHdpdGggd2hpY2ggc2hlIGRlZmluZXMgaGVyc2VsZiBhbmQgYWxsIGhlciBwYXJ0cy4gXApcCkhvd2V2ZXIgdGhlIGNpdHkgbWF5IHJlYWxseSBiZSwgYmVuZWF0aCB0aGlzIHRoaWNrIGNvYXRpbmcgb2Ygc2lnbnMsIHdoYXRldmVyIGl0IG1heSBjb250YWluIG9yIGNvbmNlYWwsIHlvdSBsZWF2ZSBUYW1hcmEgd2l0aG91dCBoYXZpbmcgZGlzY292ZXJlZCBpdC4gT3V0c2lkZSwgdGhlIGxhbmQgc3RyZXRjaGVzLCBlbXB0eSwgdG8gdGhlIGhvcml6b247IHRoZSBza3kgb3BlbnMsIHdpdGggc3BlZWRpbmcgY2xvdWRzLiBJbiB0aGUgc2hhcGUgdGhhdCBjaGFuY2UgYW5kIHdpbmQgZ2l2ZSB0aGUgY2xvdWRzLCB5b3UgYXJlIGFscmVhZHkgaW50ZW50IG9uIHJlY29nbml6aW5nIGZpZ3VyZXM6IGEgc2FpbGluZyBzaGlwLCBhIGhhbmQsIGFuIGVsZXBoYW50XCc4NX0BAAAAIwAAAAEAAAAHAAAAVFhULnJ0ZhAAAACUdx5WtgEAAAAAAAAAAAAA</rtfd>
-</item>
-<item ID="1444837042" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Height" >7.764659862</attribute>
-<attribute name="Modified" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >7</attribute>
-<attribute name="Visits" >13</attribute>
-<attribute name="Width" >11.07715527</attribute>
-<attribute name="Xpos" >-6.410481858</attribute>
-<attribute name="Ypos" >2.945052697</attribute>
-</item>
-</item>
-<item ID="1444837226" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:40-04:00</attribute>
-<attribute name="Height" >3.913131186</attribute>
-<attribute name="MapScrollX" >-2.268030789</attribute>
-<attribute name="MapScrollY" >-23.43269416</attribute>
-<attribute name="Modified" >2015-10-14T11:18:32-04:00</attribute>
-<attribute name="Name" >4 Zora</attribute>
-<attribute name="SelectionCount" >39</attribute>
-<attribute name="Visits" >57</attribute>
-<attribute name="Width" >3.000000004</attribute>
-<attribute name="Xpos" >2.20499698</attribute>
-<attribute name="Ypos" >18.63474329</attribute>
-<item ID="1444837227" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:18:38-04:00</attribute>
-<attribute name="Height" >7.846768231</attribute>
-<attribute name="Modified" >2015-10-14T11:44:29-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >10</attribute>
-<attribute name="Visits" >19</attribute>
-<attribute name="Width" >9.376834786</attribute>
-<attribute name="Xpos" >-10.13210546</attribute>
-<attribute name="Ypos" >-23.99041998</attribute>
-<text >Beyond six rivers and three mountain ranges rises Zora, a city that no one, having seen it, can forget. - But not because, like other memorable cities, it leaves an unusual image in your recollections. Zora has the quality of remaining in your memory point by point, in its succession of streets, of houses along the streets, and of doors and windows in the houses, though nothing in them possesses a special beauty or rarity. Zora&apos;s secret lies in the way your gaze runs over patterns following one another as in a musical score where not a note can be altered or displaced. The man who knows by heart how Zora is made, if he is unable to sleep at night, can imagine he is walking along the streets and he remembers the order by which the copper clock follows the barber&apos;s striped awning, then the fountain with the nine jets, the astronomer&apos;s glass tower, the melon vendor&apos;s kiosk, the statue of the hermit and the lion, the Turkish bath, the cafe at the comer, the alley that leads to the harbor. This city which cannot be expunged from the mind is like an armature, a honeycomb in whose cells each of us can place the things he wants to remember: names of famous men, virtues, numbers, vegetable and mineral classifications, dates of battles, constellations, parts of speech. Between each idea and each point of the itinerary an affinity or a contrast can be established, serving as an immediate aid to memory. So the world&apos;s most learned men are those who have memorized Zora. 
-
-But in vain I set out to visit the city: forced to remain motionless and always the same, in order to be more easily remembered, Zora has languished, disintegrated, disappeared. The earth has forgotten her.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC5eBwAAKwAAAAEAAABWBwAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBCZXlvbmQgc2l4IHJpdmVycyBhbmQgdGhyZWUgbW91bnRhaW4gcmFuZ2VzIHJpc2VzIFpvcmEsIGEgY2l0eSB0aGF0IG5vIG9uZSwgaGF2aW5nIHNlZW4gaXQsIGNhbiBmb3JnZXQuIC0gQnV0IG5vdCBiZWNhdXNlLCBsaWtlIG90aGVyIG1lbW9yYWJsZSBjaXRpZXMsIGl0IGxlYXZlcyBhbiB1bnVzdWFsIGltYWdlIGluIHlvdXIgcmVjb2xsZWN0aW9ucy4gWm9yYSBoYXMgdGhlIHF1YWxpdHkgb2YgcmVtYWluaW5nIGluIHlvdXIgbWVtb3J5IHBvaW50IGJ5IHBvaW50LCBpbiBpdHMgc3VjY2Vzc2lvbiBvZiBzdHJlZXRzLCBvZiBob3VzZXMgYWxvbmcgdGhlIHN0cmVldHMsIGFuZCBvZiBkb29ycyBhbmQgd2luZG93cyBpbiB0aGUgaG91c2VzLCB0aG91Z2ggbm90aGluZyBpbiB0aGVtIHBvc3Nlc3NlcyBhIHNwZWNpYWwgYmVhdXR5IG9yIHJhcml0eS4gWm9yYSdzIHNlY3JldCBsaWVzIGluIHRoZSB3YXkgeW91ciBnYXplIHJ1bnMgb3ZlciBwYXR0ZXJucyBmb2xsb3dpbmcgb25lIGFub3RoZXIgYXMgaW4gYSBtdXNpY2FsIHNjb3JlIHdoZXJlIG5vdCBhIG5vdGUgY2FuIGJlIGFsdGVyZWQgb3IgZGlzcGxhY2VkLiBUaGUgbWFuIHdobyBrbm93cyBieSBoZWFydCBob3cgWm9yYSBpcyBtYWRlLCBpZiBoZSBpcyB1bmFibGUgdG8gc2xlZXAgYXQgbmlnaHQsIGNhbiBpbWFnaW5lIGhlIGlzIHdhbGtpbmcgYWxvbmcgdGhlIHN0cmVldHMgYW5kIGhlIHJlbWVtYmVycyB0aGUgb3JkZXIgYnkgd2hpY2ggdGhlIGNvcHBlciBjbG9jayBmb2xsb3dzIHRoZSBiYXJiZXIncyBzdHJpcGVkIGF3bmluZywgdGhlbiB0aGUgZm91bnRhaW4gd2l0aCB0aGUgbmluZSBqZXRzLCB0aGUgYXN0cm9ub21lcidzIGdsYXNzIHRvd2VyLCB0aGUgbWVsb24gdmVuZG9yJ3Mga2lvc2ssIHRoZSBzdGF0dWUgb2YgdGhlIGhlcm1pdCBhbmQgdGhlIGxpb24sIHRoZSBUdXJraXNoIGJhdGgsIHRoZSBjYWZlIGF0IHRoZSBjb21lciwgdGhlIGFsbGV5IHRoYXQgbGVhZHMgdG8gdGhlIGhhcmJvci4gVGhpcyBjaXR5IHdoaWNoIGNhbm5vdCBiZSBleHB1bmdlZCBmcm9tIHRoZSBtaW5kIGlzIGxpa2UgYW4gYXJtYXR1cmUsIGEgaG9uZXljb21iIGluIHdob3NlIGNlbGxzIGVhY2ggb2YgdXMgY2FuIHBsYWNlIHRoZSB0aGluZ3MgaGUgd2FudHMgdG8gcmVtZW1iZXI6IG5hbWVzIG9mIGZhbW91cyBtZW4sIHZpcnR1ZXMsIG51bWJlcnMsIHZlZ2V0YWJsZSBhbmQgbWluZXJhbCBjbGFzc2lmaWNhdGlvbnMsIGRhdGVzIG9mIGJhdHRsZXMsIGNvbnN0ZWxsYXRpb25zLCBwYXJ0cyBvZiBzcGVlY2guIEJldHdlZW4gZWFjaCBpZGVhIGFuZCBlYWNoIHBvaW50IG9mIHRoZSBpdGluZXJhcnkgYW4gYWZmaW5pdHkgb3IgYSBjb250cmFzdCBjYW4gYmUgZXN0YWJsaXNoZWQsIHNlcnZpbmcgYXMgYW4gaW1tZWRpYXRlIGFpZCB0byBtZW1vcnkuIFNvIHRoZSB3b3JsZCdzIG1vc3QgbGVhcm5lZCBtZW4gYXJlIHRob3NlIHdobyBoYXZlIG1lbW9yaXplZCBab3JhLiBcClwKQnV0IGluIHZhaW4gSSBzZXQgb3V0IHRvIHZpc2l0IHRoZSBjaXR5OiBmb3JjZWQgdG8gcmVtYWluIG1vdGlvbmxlc3MgYW5kIGFsd2F5cyB0aGUgc2FtZSwgaW4gb3JkZXIgdG8gYmUgbW9yZSBlYXNpbHkgcmVtZW1iZXJlZCwgWm9yYSBoYXMgbGFuZ3Vpc2hlZCwgZGlzaW50ZWdyYXRlZCwgZGlzYXBwZWFyZWQuIFRoZSBlYXJ0aCBoYXMgZm9yZ290dGVuIGhlci59AQAAACMAAAABAAAABwAAAFRYVC5ydGYQAAAAXXgeVrYBAAAAAAAAAAAAAA==</rtfd>
-</item>
-<item ID="1444837228" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Height" >7.764659862</attribute>
-<attribute name="Modified" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >7</attribute>
-<attribute name="Visits" >13</attribute>
-<attribute name="Width" >11.07715527</attribute>
-<attribute name="Xpos" >-6.410481858</attribute>
-<attribute name="Ypos" >2.945052697</attribute>
-</item>
-<item ID="1444837478" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:44:37-04:00</attribute>
-<attribute name="Height" >7.45596817</attribute>
-<attribute name="Modified" >2015-10-14T11:44:37-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >2</attribute>
-<attribute name="Visits" >3</attribute>
-<attribute name="Width" >9.376834784</attribute>
-<attribute name="Xpos" >-10.13210546</attribute>
-<attribute name="Ypos" >-14.21805175</attribute>
-</item>
-</item>
-<item ID="1444837479" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:40-04:00</attribute>
-<attribute name="Height" >3.913131186</attribute>
-<attribute name="MapScrollX" >-15.42050371</attribute>
-<attribute name="MapScrollY" >-54.84644186</attribute>
-<attribute name="Modified" >2015-10-14T11:18:32-04:00</attribute>
-<attribute name="Name" >3 Despina</attribute>
-<attribute name="SelectionCount" >42</attribute>
-<attribute name="Visits" >59</attribute>
-<attribute name="Width" >3.000000004</attribute>
-<attribute name="Xpos" >7.361083984</attribute>
-<attribute name="Ypos" >18.63474329</attribute>
-<item ID="1444837480" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:18:38-04:00</attribute>
-<attribute name="Height" >8.597989838</attribute>
-<attribute name="Modified" >2015-10-19T13:11:46-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >11</attribute>
-<attribute name="Visits" >21</attribute>
-<attribute name="Width" >10.27176177</attribute>
-<attribute name="Xpos" >-19.20896041</attribute>
-<attribute name="Ypos" >-37.17020284</attribute>
-<text >Despina can be reached in two ways: by ship or by camel. The city displays one face to the traveler arriving overland and a different one to him who arrives by sea. When the camel driver sees, at the horizon of the tableland, the pinnacles of the skyscrapers come into view, the radar antennae, the white and red windsocks flapping, the chimneys belching smoke, he thinks of a ship; he knows it is a city, but he thinks of it as a vessel that will take him away from the desert, a windjammer about to cast off, with the breeze already swelling the sails, not yet unfurled, or a steamboat with its boiler vibrating in the iron keel; and he thinks of all the ports, the foreign merchandise the cranes unload on the docks, the taverns where crews of different Bags break bottles over one another&apos;s heads, the lighted, ground-Boor windows, each with a woman combing her hair. In the coastline&apos;s haze, the sailor discerns the form of a camel&apos;s withers, an embroidered saddle with glittering fringe between two spotted humps, advancing and swaying; he knows it is a city, but he thinks of it as a camel from whose pack hang wineskins and bags of candied fruit, date wine, tobacco leaves, and already he sees himself at the head of a long caravan taking him away from the desert of the sea, toward oases of fresh water in the palm trees&apos; jagged shade, toward palaces of thick, whitewashed walls, tiled courts where girls are dancing barefoot, moving their arms, half-hidden by their veils, and half-revealed. Each city receives its form from the desert it op· poses; and so the camel driver and the sailor see Despina, a border city between two deserts.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC4zBwAAKwAAAAEAAAArBwAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBEZXNwaW5hIGNhbiBiZSByZWFjaGVkIGluIHR3byB3YXlzOiBieSBzaGlwIG9yIGJ5IGNhbWVsLiBUaGUgY2l0eSBkaXNwbGF5cyBvbmUgZmFjZSB0byB0aGUgdHJhdmVsZXIgYXJyaXZpbmcgb3ZlcmxhbmQgYW5kIGEgZGlmZmVyZW50IG9uZSB0byBoaW0gd2hvIGFycml2ZXMgYnkgc2VhLiBXaGVuIHRoZSBjYW1lbCBkcml2ZXIgc2VlcywgYXQgdGhlIGhvcml6b24gb2YgdGhlIHRhYmxlbGFuZCwgdGhlIHBpbm5hY2xlcyBvZiB0aGUgc2t5c2NyYXBlcnMgY29tZSBpbnRvIHZpZXcsIHRoZSByYWRhciBhbnRlbm5hZSwgdGhlIHdoaXRlIGFuZCByZWQgd2luZHNvY2tzIGZsYXBwaW5nLCB0aGUgY2hpbW5leXMgYmVsY2hpbmcgc21va2UsIGhlIHRoaW5rcyBvZiBhIHNoaXA7IGhlIGtub3dzIGl0IGlzIGEgY2l0eSwgYnV0IGhlIHRoaW5rcyBvZiBpdCBhcyBhIHZlc3NlbCB0aGF0IHdpbGwgdGFrZSBoaW0gYXdheSBmcm9tIHRoZSBkZXNlcnQsIGEgd2luZGphbW1lciBhYm91dCB0byBjYXN0IG9mZiwgd2l0aCB0aGUgYnJlZXplIGFscmVhZHkgc3dlbGxpbmcgdGhlIHNhaWxzLCBub3QgeWV0IHVuZnVybGVkLCBvciBhIHN0ZWFtYm9hdCB3aXRoIGl0cyBib2lsZXIgdmlicmF0aW5nIGluIHRoZSBpcm9uIGtlZWw7IGFuZCBoZSB0aGlua3Mgb2YgYWxsIHRoZSBwb3J0cywgdGhlIGZvcmVpZ24gbWVyY2hhbmRpc2UgdGhlIGNyYW5lcyB1bmxvYWQgb24gdGhlIGRvY2tzLCB0aGUgdGF2ZXJucyB3aGVyZSBjcmV3cyBvZiBkaWZmZXJlbnQgQmFncyBicmVhayBib3R0bGVzIG92ZXIgb25lIGFub3RoZXIncyBoZWFkcywgdGhlIGxpZ2h0ZWQsIGdyb3VuZC1Cb29yIHdpbmRvd3MsIGVhY2ggd2l0aCBhIHdvbWFuIGNvbWJpbmcgaGVyIGhhaXIuIEluIHRoZSBjb2FzdGxpbmUncyBoYXplLCB0aGUgc2FpbG9yIGRpc2Nlcm5zIHRoZSBmb3JtIG9mIGEgY2FtZWwncyB3aXRoZXJzLCBhbiBlbWJyb2lkZXJlZCBzYWRkbGUgd2l0aCBnbGl0dGVyaW5nIGZyaW5nZSBiZXR3ZWVuIHR3byBzcG90dGVkIGh1bXBzLCBhZHZhbmNpbmcgYW5kIHN3YXlpbmc7IGhlIGtub3dzIGl0IGlzIGEgY2l0eSwgYnV0IGhlIHRoaW5rcyBvZiBpdCBhcyBhIGNhbWVsIGZyb20gd2hvc2UgcGFjayBoYW5nIHdpbmVza2lucyBhbmQgYmFncyBvZiBjYW5kaWVkIGZydWl0LCBkYXRlIHdpbmUsIHRvYmFjY28gbGVhdmVzLCBhbmQgYWxyZWFkeSBoZSBzZWVzIGhpbXNlbGYgYXQgdGhlIGhlYWQgb2YgYSBsb25nIGNhcmF2YW4gdGFraW5nIGhpbSBhd2F5IGZyb20gdGhlIGRlc2VydCBvZiB0aGUgc2VhLCB0b3dhcmQgb2FzZXMgb2YgZnJlc2ggd2F0ZXIgaW4gdGhlIHBhbG0gdHJlZXMnIGphZ2dlZCBzaGFkZSwgdG93YXJkIHBhbGFjZXMgb2YgdGhpY2ssIHdoaXRld2FzaGVkIHdhbGxzLCB0aWxlZCBjb3VydHMgd2hlcmUgZ2lybHMgYXJlIGRhbmNpbmcgYmFyZWZvb3QsIG1vdmluZyB0aGVpciBhcm1zLCBoYWxmLWhpZGRlbiBieSB0aGVpciB2ZWlscywgYW5kIGhhbGYtcmV2ZWFsZWQuIEVhY2ggY2l0eSByZWNlaXZlcyBpdHMgZm9ybSBmcm9tIHRoZSBkZXNlcnQgaXQgb3BcJ2I3IHBvc2VzOyBhbmQgc28gdGhlIGNhbWVsIGRyaXZlciBhbmQgdGhlIHNhaWxvciBzZWUgRGVzcGluYSwgYSBib3JkZXIgY2l0eSBiZXR3ZWVuIHR3byBkZXNlcnRzLn0BAAAAIwAAAAEAAAAHAAAAVFhULnJ0ZhAAAABSJCVWtgEAAAAAAAAAAAAA</rtfd>
-</item>
-<item ID="1444837481" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Height" >7.764659862</attribute>
-<attribute name="Modified" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >7</attribute>
-<attribute name="Visits" >13</attribute>
-<attribute name="Width" >11.07715527</attribute>
-<attribute name="Xpos" >-6.410481858</attribute>
-<attribute name="Ypos" >2.945052697</attribute>
-</item>
-<item ID="1444837482" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:44:37-04:00</attribute>
-<attribute name="Height" >7.45596817</attribute>
-<attribute name="Modified" >2015-10-14T11:44:37-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >3</attribute>
-<attribute name="Visits" >5</attribute>
-<attribute name="Width" >9.376834784</attribute>
-<attribute name="Xpos" >-19.20896041</attribute>
-<attribute name="Ypos" >-25.54865601</attribute>
-</item>
-</item>
-<item ID="1445274626" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:40-04:00</attribute>
-<attribute name="Height" >3.913131186</attribute>
-<attribute name="MapScrollX" >-2.268030789</attribute>
-<attribute name="MapScrollY" >-23.43269416</attribute>
-<attribute name="Modified" >2015-10-14T11:18:32-04:00</attribute>
-<attribute name="Name" >2 Zirma</attribute>
-<attribute name="SelectionCount" >44</attribute>
-<attribute name="Visits" >62</attribute>
-<attribute name="Width" >3.000000004</attribute>
-<attribute name="Xpos" >12.78099695</attribute>
-<attribute name="Ypos" >18.63474329</attribute>
-<item ID="1445274627" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:18:38-04:00</attribute>
-<attribute name="Height" >7.846768231</attribute>
-<attribute name="Modified" >2015-10-19T13:12:43-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >12</attribute>
-<attribute name="Visits" >23</attribute>
-<attribute name="Width" >9.376834786</attribute>
-<attribute name="Xpos" >-10.13210546</attribute>
-<attribute name="Ypos" >-23.99041998</attribute>
-<text >Travelers return from the city of Zirma with distinct memories: a blind black man shouting in the crowd, a lunatic teetering on a skyscraper&apos;s cornice, a girl walking with a puma on a leash. Actually many of the blind men who tap their canes on Zirma&apos;s cobblestones are black; in every skyscraper there is someone going mad; all lunatics spend hours on cornices; there is no puma that some girl does not raise, as a whim. The city is redundant: it repeats itself so that something will stick in the mind. I too am returning from Zirma: my memory includes dirigibles flying in all directions, at window level; streets of shops where tattoos are drawn on sailors&apos; skin; underground trains crammed with obese women suffering from the humidity. My traveling companions, on the other hand, swear they saw only one dirigible hovering among the city&apos;s spires, only one tattoo artist arranging needles and inks and pierced patterns on his bench, only one fat woman fanning herself on a train&apos;s platform. Memory is redundant: it repeats signs so that the city can begin to exist.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC7wBAAAKwAAAAEAAADoBAAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBUcmF2ZWxlcnMgcmV0dXJuIGZyb20gdGhlIGNpdHkgb2YgWmlybWEgd2l0aCBkaXN0aW5jdCBtZW1vcmllczogYSBibGluZCBibGFjayBtYW4gc2hvdXRpbmcgaW4gdGhlIGNyb3dkLCBhIGx1bmF0aWMgdGVldGVyaW5nIG9uIGEgc2t5c2NyYXBlcidzIGNvcm5pY2UsIGEgZ2lybCB3YWxraW5nIHdpdGggYSBwdW1hIG9uIGEgbGVhc2guIEFjdHVhbGx5IG1hbnkgb2YgdGhlIGJsaW5kIG1lbiB3aG8gdGFwIHRoZWlyIGNhbmVzIG9uIFppcm1hJ3MgY29iYmxlc3RvbmVzIGFyZSBibGFjazsgaW4gZXZlcnkgc2t5c2NyYXBlciB0aGVyZSBpcyBzb21lb25lIGdvaW5nIG1hZDsgYWxsIGx1bmF0aWNzIHNwZW5kIGhvdXJzIG9uIGNvcm5pY2VzOyB0aGVyZSBpcyBubyBwdW1hIHRoYXQgc29tZSBnaXJsIGRvZXMgbm90IHJhaXNlLCBhcyBhIHdoaW0uIFRoZSBjaXR5IGlzIHJlZHVuZGFudDogaXQgcmVwZWF0cyBpdHNlbGYgc28gdGhhdCBzb21ldGhpbmcgd2lsbCBzdGljayBpbiB0aGUgbWluZC4gSSB0b28gYW0gcmV0dXJuaW5nIGZyb20gWmlybWE6IG15IG1lbW9yeSBpbmNsdWRlcyBkaXJpZ2libGVzIGZseWluZyBpbiBhbGwgZGlyZWN0aW9ucywgYXQgd2luZG93IGxldmVsOyBzdHJlZXRzIG9mIHNob3BzIHdoZXJlIHRhdHRvb3MgYXJlIGRyYXduIG9uIHNhaWxvcnMnIHNraW47IHVuZGVyZ3JvdW5kIHRyYWlucyBjcmFtbWVkIHdpdGggb2Jlc2Ugd29tZW4gc3VmZmVyaW5nIGZyb20gdGhlIGh1bWlkaXR5LiBNeSB0cmF2ZWxpbmcgY29tcGFuaW9ucywgb24gdGhlIG90aGVyIGhhbmQsIHN3ZWFyIHRoZXkgc2F3IG9ubHkgb25lIGRpcmlnaWJsZSBob3ZlcmluZyBhbW9uZyB0aGUgY2l0eSdzIHNwaXJlcywgb25seSBvbmUgdGF0dG9vIGFydGlzdCBhcnJhbmdpbmcgbmVlZGxlcyBhbmQgaW5rcyBhbmQgcGllcmNlZCBwYXR0ZXJucyBvbiBoaXMgYmVuY2gsIG9ubHkgb25lIGZhdCB3b21hbiBmYW5uaW5nIGhlcnNlbGYgb24gYSB0cmFpbidzIHBsYXRmb3JtLiBNZW1vcnkgaXMgcmVkdW5kYW50OiBpdCByZXBlYXRzIHNpZ25zIHNvIHRoYXQgdGhlIGNpdHkgY2FuIGJlZ2luIHRvIGV4aXN0Ln0BAAAAIwAAAAEAAAAHAAAAVFhULnJ0ZhAAAACLJCVWtgEAAAAAAAAAAAAA</rtfd>
-</item>
-<item ID="1445274628" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Height" >7.764659862</attribute>
-<attribute name="Modified" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >7</attribute>
-<attribute name="Visits" >13</attribute>
-<attribute name="Width" >11.07715527</attribute>
-<attribute name="Xpos" >-6.410481858</attribute>
-<attribute name="Ypos" >2.945052697</attribute>
-</item>
-<item ID="1445274629" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:44:37-04:00</attribute>
-<attribute name="Height" >7.45596817</attribute>
-<attribute name="Modified" >2015-10-14T11:44:37-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >2</attribute>
-<attribute name="Visits" >3</attribute>
-<attribute name="Width" >9.376834784</attribute>
-<attribute name="Xpos" >-10.13210546</attribute>
-<attribute name="Ypos" >-14.21805175</attribute>
-</item>
-</item>
-<item ID="1445274634" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:40-04:00</attribute>
-<attribute name="Height" >3.913131186</attribute>
-<attribute name="MapScrollX" >-3.309691839</attribute>
-<attribute name="MapScrollY" >-23.43269416</attribute>
-<attribute name="Modified" >2015-10-14T11:18:32-04:00</attribute>
-<attribute name="Name" >1 Isaura</attribute>
-<attribute name="SelectionCount" >43</attribute>
-<attribute name="TitleHeight" >0.9718003869</attribute>
-<attribute name="Visits" >61</attribute>
-<attribute name="Width" >3.000000004</attribute>
-<attribute name="Xpos" >17.97998945</attribute>
-<attribute name="Ypos" >18.63474329</attribute>
-<item ID="1445274635" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:18:38-04:00</attribute>
-<attribute name="Height" >6.911559665</attribute>
-<attribute name="Modified" >2015-10-19T13:13:40-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >11</attribute>
-<attribute name="Visits" >21</attribute>
-<attribute name="Width" >9.970367455</attribute>
-<attribute name="Xpos" >-11.93431754</attribute>
-<attribute name="Ypos" >-37.73069051</attribute>
-<text >Isaura, city of the thousand wells, is said to rise over a deep, subterranean lake. On all sides, wherever the inhabitants dig long vertical holes in the ground, they succeed in drawing up water, as far as the city extends, and no farther. Its green border repeats the dark outline of the buried lake; an invisible landscape conditions the visible one; everything that moves in the sunlight is driven by the lapping wave enclosed beneath the rock&apos;s calcareous sky. Consequently two forms of religion exist in Isaura. The city&apos;s gods, according to some people, live in the depths, in the black lake that feeds the underground streams. According to others, the gods live in the buckets that rise, suspended from a cable, as they appear over the edge of the wells, in the revolving pulleys, in the windlasses of the norias, in the pump handles. in the blades of the windmills that draw the water up from the drillings, in the trestles that support the twisting probes, in the reservoirs perched on stilts over the roofs. in the slender arches of the aqueducts, in all the columns of water, the vertical pipes, the plungers, the drains, all the way up to the weathercocks that surmount the airy scaffoldings of Isaura, a city that moves entirely upward.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC6jBQAAKwAAAAEAAACbBQAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBJc2F1cmEsIGNpdHkgb2YgdGhlIHRob3VzYW5kIHdlbGxzLCBpcyBzYWlkIHRvIHJpc2Ugb3ZlciBhIGRlZXAsIHN1YnRlcnJhbmVhbiBsYWtlLiBPbiBhbGwgc2lkZXMsIHdoZXJldmVyIHRoZSBpbmhhYml0YW50cyBkaWcgbG9uZyB2ZXJ0aWNhbCBob2xlcyBpbiB0aGUgZ3JvdW5kLCB0aGV5IHN1Y2NlZWQgaW4gZHJhd2luZyB1cCB3YXRlciwgYXMgZmFyIGFzIHRoZSBjaXR5IGV4dGVuZHMsIGFuZCBubyBmYXJ0aGVyLiBJdHMgZ3JlZW4gYm9yZGVyIHJlcGVhdHMgdGhlIGRhcmsgb3V0bGluZSBvZiB0aGUgYnVyaWVkIGxha2U7IGFuIGludmlzaWJsZSBsYW5kc2NhcGUgY29uZGl0aW9ucyB0aGUgdmlzaWJsZSBvbmU7IGV2ZXJ5dGhpbmcgdGhhdCBtb3ZlcyBpbiB0aGUgc3VubGlnaHQgaXMgZHJpdmVuIGJ5IHRoZSBsYXBwaW5nIHdhdmUgZW5jbG9zZWQgYmVuZWF0aCB0aGUgcm9jaydzIGNhbGNhcmVvdXMgc2t5LiBDb25zZXF1ZW50bHkgdHdvIGZvcm1zIG9mIHJlbGlnaW9uIGV4aXN0IGluIElzYXVyYS4gVGhlIGNpdHkncyBnb2RzLCBhY2NvcmRpbmcgdG8gc29tZSBwZW9wbGUsIGxpdmUgaW4gdGhlIGRlcHRocywgaW4gdGhlIGJsYWNrIGxha2UgdGhhdCBmZWVkcyB0aGUgdW5kZXJncm91bmQgc3RyZWFtcy4gQWNjb3JkaW5nIHRvIG90aGVycywgdGhlIGdvZHMgbGl2ZSBpbiB0aGUgYnVja2V0cyB0aGF0IHJpc2UsIHN1c3BlbmRlZCBmcm9tIGEgY2FibGUsIGFzIHRoZXkgYXBwZWFyIG92ZXIgdGhlIGVkZ2Ugb2YgdGhlIHdlbGxzLCBpbiB0aGUgcmV2b2x2aW5nIHB1bGxleXMsIGluIHRoZSB3aW5kbGFzc2VzIG9mIHRoZSBub3JpYXMsIGluIHRoZSBwdW1wIGhhbmRsZXMuIGluIHRoZSBibGFkZXMgb2YgdGhlIHdpbmRtaWxscyB0aGF0IGRyYXcgdGhlIHdhdGVyIHVwIGZyb20gdGhlIGRyaWxsaW5ncywgaW4gdGhlIHRyZXN0bGVzIHRoYXQgc3VwcG9ydCB0aGUgdHdpc3RpbmcgcHJvYmVzLCBpbiB0aGUgcmVzZXJ2b2lycyBwZXJjaGVkIG9uIHN0aWx0cyBvdmVyIHRoZSByb29mcy4gaW4gdGhlIHNsZW5kZXIgYXJjaGVzIG9mIHRoZSBhcXVlZHVjdHMsIGluIGFsbCB0aGUgY29sdW1ucyBvZiB3YXRlciwgdGhlIHZlcnRpY2FsIHBpcGVzLCB0aGUgcGx1bmdlcnMsIHRoZSBkcmFpbnMsIGFsbCB0aGUgd2F5IHVwIHRvIHRoZSB3ZWF0aGVyY29ja3MgdGhhdCBzdXJtb3VudCB0aGUgYWlyeSBzY2FmZm9sZGluZ3Mgb2YgSXNhdXJhLCBhIGNpdHkgdGhhdCBtb3ZlcyBlbnRpcmVseSB1cHdhcmQufQEAAAAjAAAAAQAAAAcAAABUWFQucnRmEAAAAMQkJVa2AQAAAAAAAAAAAAA=</rtfd>
-</item>
-<item ID="1445274636" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Height" >7.764659862</attribute>
-<attribute name="Modified" >2015-10-14T11:37:18-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >7</attribute>
-<attribute name="Visits" >13</attribute>
-<attribute name="Width" >11.07715527</attribute>
-<attribute name="Xpos" >-6.410481858</attribute>
-<attribute name="Ypos" >2.945052697</attribute>
-</item>
-<item ID="1445274637" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:44:37-04:00</attribute>
-<attribute name="Height" >7.45596817</attribute>
-<attribute name="Modified" >2015-10-14T11:44:37-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >3</attribute>
-<attribute name="Visits" >5</attribute>
-<attribute name="Width" >9.376834784</attribute>
-<attribute name="Xpos" >-11.93431754</attribute>
-<attribute name="Ypos" >-28.47927909</attribute>
-</item>
-</item>
-<item ID="1444240198" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:17-04:00</attribute>
-<attribute name="Height" >3.755301959</attribute>
-<attribute name="Modified" >2015-10-14T11:16:43-04:00</attribute>
-<attribute name="Name" >2 Isidora</attribute>
-<attribute name="SelectionCount" >30</attribute>
-<attribute name="Visits" >43</attribute>
-<attribute name="Width" >2.686372497</attribute>
-<attribute name="Xpos" >2.20499698</attribute>
-<attribute name="Ypos" >7.107615942</attribute>
-<item ID="1444835812" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:16:51-04:00</attribute>
-<attribute name="Height" >4.184793583</attribute>
-<attribute name="Modified" >2015-10-14T11:17:02-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >7</attribute>
-<attribute name="Visits" >13</attribute>
-<attribute name="Width" >9.047417978</attribute>
-<attribute name="Xpos" >-7.266343594</attribute>
-<attribute name="Ypos" >-9.289131252</attribute>
-<text >When a man rides a long time through wild regions he feels the desire for a city. Finally he comes to Isidora, a city where the buildings have spiral staircases encrusted with spiral seashells, where perfect telescopes and violins are made, where the foreigner hesitating between two women always encounters a third, where cockfights degenerate into bloody brawls among the bettors. He was thinking of all these things when he desired a city. Isidora, therefore, is the city of his dreams: with one difference. The dreamed-of city contained him as a young man; he arrives at Isidora in his old age. In the square there is the wall where the old men sit and watch the young go by; he is seated in a row with them. Desires are already memories.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC6oAwAAKwAAAAEAAACgAwAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBXaGVuIGEgbWFuIHJpZGVzIGEgbG9uZyB0aW1lIHRocm91Z2ggd2lsZCByZWdpb25zIGhlIGZlZWxzIHRoZSBkZXNpcmUgZm9yIGEgY2l0eS4gRmluYWxseSBoZSBjb21lcyB0byBJc2lkb3JhLCBhIGNpdHkgd2hlcmUgdGhlIGJ1aWxkaW5ncyBoYXZlIHNwaXJhbCBzdGFpcmNhc2VzIGVuY3J1c3RlZCB3aXRoIHNwaXJhbCBzZWFzaGVsbHMsIHdoZXJlIHBlcmZlY3QgdGVsZXNjb3BlcyBhbmQgdmlvbGlucyBhcmUgbWFkZSwgd2hlcmUgdGhlIGZvcmVpZ25lciBoZXNpdGF0aW5nIGJldHdlZW4gdHdvIHdvbWVuIGFsd2F5cyBlbmNvdW50ZXJzIGEgdGhpcmQsIHdoZXJlIGNvY2tmaWdodHMgZGVnZW5lcmF0ZSBpbnRvIGJsb29keSBicmF3bHMgYW1vbmcgdGhlIGJldHRvcnMuIEhlIHdhcyB0aGlua2luZyBvZiBhbGwgdGhlc2UgdGhpbmdzIHdoZW4gaGUgZGVzaXJlZCBhIGNpdHkuIElzaWRvcmEsIHRoZXJlZm9yZSwgaXMgdGhlIGNpdHkgb2YgaGlzIGRyZWFtczogd2l0aCBvbmUgZGlmZmVyZW5jZS4gVGhlIGRyZWFtZWQtb2YgY2l0eSBjb250YWluZWQgaGltIGFzIGEgeW91bmcgbWFuOyBoZSBhcnJpdmVzIGF0IElzaWRvcmEgaW4gaGlzIG9sZCBhZ2UuIEluIHRoZSBzcXVhcmUgdGhlcmUgaXMgdGhlIHdhbGwgd2hlcmUgdGhlIG9sZCBtZW4gc2l0IGFuZCB3YXRjaCB0aGUgeW91bmcgZ28gYnk7IGhlIGlzIHNlYXRlZCBpbiBhIHJvdyB3aXRoIHRoZW0uIERlc2lyZXMgYXJlIGFscmVhZHkgbWVtb3JpZXMufQEAAAAjAAAAAQAAAAcAAABUWFQucnRmEAAAAO5xHla2AQAAAAAAAAAAAAA=</rtfd>
-</item>
-<item ID="1444836596" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:29:55-04:00</attribute>
-<attribute name="Height" >6.460264327</attribute>
-<attribute name="Modified" >2015-10-14T11:36:11-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >2</attribute>
-<attribute name="Visits" >3</attribute>
-<attribute name="Width" >9.047417978</attribute>
-<attribute name="Xpos" >-7.266343594</attribute>
-<attribute name="Ypos" >-3.845281846</attribute>
-</item>
-</item>
-<item ID="1444239604" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:03-04:00</attribute>
-<attribute name="Height" >3.899826973</attribute>
-<attribute name="Modified" >2015-10-14T11:13:46-04:00</attribute>
-<attribute name="Name" >1 Diomira</attribute>
-<attribute name="SelectionCount" >43</attribute>
-<attribute name="Visits" >64</attribute>
-<attribute name="Width" >2.686372493</attribute>
-<attribute name="Xpos" >2.20499698</attribute>
-<attribute name="Ypos" >1.394224431</attribute>
-<item ID="1444835630" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:13:49-04:00</attribute>
-<attribute name="Height" >4.105680193</attribute>
-<attribute name="Modified" >2015-10-14T11:14:04-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >14</attribute>
-<attribute name="Visits" >21</attribute>
-<attribute name="Width" >9.061067357</attribute>
-<attribute name="Xpos" >-8.819485743</attribute>
-<attribute name="Ypos" >-15.30676834</attribute>
-<text >Leaving there and proceeding for three days toward the east, you reach Diomira, a city with sixty silver domes, bronze statues of all the gods, streets paved with lead, a crystal theater, a golden cock that crows each morning on a tower. All these beauties will already be familiar to the visitor, who has seen them also in other cities. But the special quality of this city for the man who arrives there on a September evening, when the days are growing shorter and the multicolored lamps are lighted all at once at the doors of the food stalls and from a terrace a woman&apos;s voice cries ooh!, is that he feels envy toward those who now believe they have once before lived an evening identical to this and who think they were happy, that time.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC6oAwAAKwAAAAEAAACgAwAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBMZWF2aW5nIHRoZXJlIGFuZCBwcm9jZWVkaW5nIGZvciB0aHJlZSBkYXlzIHRvd2FyZCB0aGUgZWFzdCwgeW91IHJlYWNoIERpb21pcmEsIGEgY2l0eSB3aXRoIHNpeHR5IHNpbHZlciBkb21lcywgYnJvbnplIHN0YXR1ZXMgb2YgYWxsIHRoZSBnb2RzLCBzdHJlZXRzIHBhdmVkIHdpdGggbGVhZCwgYSBjcnlzdGFsIHRoZWF0ZXIsIGEgZ29sZGVuIGNvY2sgdGhhdCBjcm93cyBlYWNoIG1vcm5pbmcgb24gYSB0b3dlci4gQWxsIHRoZXNlIGJlYXV0aWVzIHdpbGwgYWxyZWFkeSBiZSBmYW1pbGlhciB0byB0aGUgdmlzaXRvciwgd2hvIGhhcyBzZWVuIHRoZW0gYWxzbyBpbiBvdGhlciBjaXRpZXMuIEJ1dCB0aGUgc3BlY2lhbCBxdWFsaXR5IG9mIHRoaXMgY2l0eSBmb3IgdGhlIG1hbiB3aG8gYXJyaXZlcyB0aGVyZSBvbiBhIFNlcHRlbWJlciBldmVuaW5nLCB3aGVuIHRoZSBkYXlzIGFyZSBncm93aW5nIHNob3J0ZXIgYW5kIHRoZSBtdWx0aWNvbG9yZWQgbGFtcHMgYXJlIGxpZ2h0ZWQgYWxsIGF0IG9uY2UgYXQgdGhlIGRvb3JzIG9mIHRoZSBmb29kIHN0YWxscyBhbmQgZnJvbSBhIHRlcnJhY2UgYSB3b21hbidzIHZvaWNlIGNyaWVzIG9vaCEsIGlzIHRoYXQgaGUgZmVlbHMgZW52eSB0b3dhcmQgdGhvc2Ugd2hvIG5vdyBiZWxpZXZlIHRoZXkgaGF2ZSBvbmNlIGJlZm9yZSBsaXZlZCBhbiBldmVuaW5nIGlkZW50aWNhbCB0byB0aGlzIGFuZCB3aG8gdGhpbmsgdGhleSB3ZXJlIGhhcHB5LCB0aGF0IHRpbWUufQEAAAAjAAAAAQAAAAcAAABUWFQucnRmEAAAADxxHla2AQAAAAAAAAAAAAA=</rtfd>
-</item>
-<item ID="1444836526" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:28:45-04:00</attribute>
-<attribute name="Height" >6.21046744</attribute>
-<attribute name="Modified" >2015-10-14T11:36:19-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >4</attribute>
-<attribute name="Visits" >7</attribute>
-<attribute name="Width" >9.061067357</attribute>
-<attribute name="Xpos" >-8.819485743</attribute>
-<attribute name="Ypos" >-10.22497508</attribute>
-</item>
-</item>
-<item ID="1444239641" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:40-04:00</attribute>
-<attribute name="Height" >3.736484371</attribute>
-<attribute name="Modified" >2015-10-14T11:18:32-04:00</attribute>
-<attribute name="Name" >1 Dorothea</attribute>
-<attribute name="SelectionCount" >32</attribute>
-<attribute name="Visits" >52</attribute>
-<attribute name="Width" >3.000000004</attribute>
-<attribute name="Xpos" >7.361083984</attribute>
-<attribute name="Ypos" >7.126433533</attribute>
-<item ID="1444835919" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:18:38-04:00</attribute>
-<attribute name="Height" >6.321252691</attribute>
-<attribute name="Modified" >2015-10-14T11:18:48-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >9</attribute>
-<attribute name="Visits" >16</attribute>
-<attribute name="Width" >9.167744542</attribute>
-<attribute name="Xpos" >-8.722019433</attribute>
-<attribute name="Ypos" >-13.69569411</attribute>
-<text >There are two ways of describing the city of Dorothea: you can say that four aluminum towers rise from its walls flanking seven gates with spring-operated drawbridges that span the moat whose water feeds four green canals which cross the city, dividing it into nine quarters, each with three hundred houses and seven hundred chimneys. And bearing in mind that the nubile girls of each quarter marry youths of other quarters and their parents exchange the goods that each family holds in monopoly-bergamot, sturgeon roe, astrolabes, amethysts--you can then work from these facts until you learn everything you wish about the city in the past, present, and future. Or else you can say, like the camel driver who took me there: &quot;I arrived here in my first youth, one morning, many people were hurrying along the streets toward the market, the women had fine teeth and looked you straight in the eye, three soldiers on a platform played the trumpet, and all around wheels turned and colored banners fluttered in the wind. Before then I had known only the desert and the caravan routes. In the years that followed, my eyes returned to contemplate the desert expanses and the caravan routes; but now I know this path is only one of the many that opened before me on that morning in Dorothea.&quot;</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC7IBQAAKwAAAAEAAADABQAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBUaGVyZSBhcmUgdHdvIHdheXMgb2YgZGVzY3JpYmluZyB0aGUgY2l0eSBvZiBEb3JvdGhlYTogeW91IGNhbiBzYXkgdGhhdCBmb3VyIGFsdW1pbnVtIHRvd2VycyByaXNlIGZyb20gaXRzIHdhbGxzIGZsYW5raW5nIHNldmVuIGdhdGVzIHdpdGggc3ByaW5nLW9wZXJhdGVkIGRyYXdicmlkZ2VzIHRoYXQgc3BhbiB0aGUgbW9hdCB3aG9zZSB3YXRlciBmZWVkcyBmb3VyIGdyZWVuIGNhbmFscyB3aGljaCBjcm9zcyB0aGUgY2l0eSwgZGl2aWRpbmcgaXQgaW50byBuaW5lIHF1YXJ0ZXJzLCBlYWNoIHdpdGggdGhyZWUgaHVuZHJlZCBob3VzZXMgYW5kIHNldmVuIGh1bmRyZWQgY2hpbW5leXMuIEFuZCBiZWFyaW5nIGluIG1pbmQgdGhhdCB0aGUgbnViaWxlIGdpcmxzIG9mIGVhY2ggcXVhcnRlciBtYXJyeSB5b3V0aHMgb2Ygb3RoZXIgcXVhcnRlcnMgYW5kIHRoZWlyIHBhcmVudHMgZXhjaGFuZ2UgdGhlIGdvb2RzIHRoYXQgZWFjaCBmYW1pbHkgaG9sZHMgaW4gbW9ub3BvbHktYmVyZ2Ftb3QsIHN0dXJnZW9uIHJvZSwgYXN0cm9sYWJlcywgYW1ldGh5c3RzLS15b3UgY2FuIHRoZW4gd29yayBmcm9tIHRoZXNlIGZhY3RzIHVudGlsIHlvdSBsZWFybiBldmVyeXRoaW5nIHlvdSB3aXNoIGFib3V0IHRoZSBjaXR5IGluIHRoZSBwYXN0LCBwcmVzZW50LCBhbmQgZnV0dXJlLiBPciBlbHNlIHlvdSBjYW4gc2F5LCBsaWtlIHRoZSBjYW1lbCBkcml2ZXIgd2hvIHRvb2sgbWUgdGhlcmU6ICJJIGFycml2ZWQgaGVyZSBpbiBteSBmaXJzdCB5b3V0aCwgb25lIG1vcm5pbmcsIG1hbnkgcGVvcGxlIHdlcmUgaHVycnlpbmcgYWxvbmcgdGhlIHN0cmVldHMgdG93YXJkIHRoZSBtYXJrZXQsIHRoZSB3b21lbiBoYWQgZmluZSB0ZWV0aCBhbmQgbG9va2VkIHlvdSBzdHJhaWdodCBpbiB0aGUgZXllLCB0aHJlZSBzb2xkaWVycyBvbiBhIHBsYXRmb3JtIHBsYXllZCB0aGUgdHJ1bXBldCwgYW5kIGFsbCBhcm91bmQgd2hlZWxzIHR1cm5lZCBhbmQgY29sb3JlZCBiYW5uZXJzIGZsdXR0ZXJlZCBpbiB0aGUgd2luZC4gQmVmb3JlIHRoZW4gSSBoYWQga25vd24gb25seSB0aGUgZGVzZXJ0IGFuZCB0aGUgY2FyYXZhbiByb3V0ZXMuIEluIHRoZSB5ZWFycyB0aGF0IGZvbGxvd2VkLCBteSBleWVzIHJldHVybmVkIHRvIGNvbnRlbXBsYXRlIHRoZSBkZXNlcnQgZXhwYW5zZXMgYW5kIHRoZSBjYXJhdmFuIHJvdXRlczsgYnV0IG5vdyBJIGtub3cgdGhpcyBwYXRoIGlzIG9ubHkgb25lIG9mIHRoZSBtYW55IHRoYXQgb3BlbmVkIGJlZm9yZSBtZSBvbiB0aGF0IG1vcm5pbmcgaW4gRG9yb3RoZWEuIn0BAAAAIwAAAAEAAAAHAAAAVFhULnJ0ZhAAAABYch5WtgEAAAAAAAAAAAAA</rtfd>
-</item>
-<item ID="1444836718" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:31:57-04:00</attribute>
-<attribute name="Height" >7.1360003</attribute>
-<attribute name="Modified" >2015-10-14T11:36:29-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >5</attribute>
-<attribute name="Visits" >9</attribute>
-<attribute name="Width" >9.16774454</attribute>
-<attribute name="Xpos" >-8.722019433</attribute>
-<attribute name="Ypos" >-5.492086047</attribute>
-</item>
-</item>
-<item ID="1444836367" Creator="Overboard89" >
-<attribute name="Created" >2015-10-07T13:40:40-04:00</attribute>
-<attribute name="Height" >4.068575085</attribute>
-<attribute name="Modified" >2015-10-14T11:18:32-04:00</attribute>
-<attribute name="Name" >3 Zaira</attribute>
-<attribute name="SelectionCount" >37</attribute>
-<attribute name="Visits" >60</attribute>
-<attribute name="Width" >2.686372496</attribute>
-<attribute name="Xpos" >2.20499698</attribute>
-<attribute name="Ypos" >12.63309659</attribute>
-<item ID="1444836368" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:18:38-04:00</attribute>
-<attribute name="Height" >7.917394576</attribute>
-<attribute name="Modified" >2015-10-14T11:27:02-04:00</attribute>
-<attribute name="Name" >English Text</attribute>
-<attribute name="SelectionCount" >6</attribute>
-<attribute name="Visits" >9</attribute>
-<attribute name="Width" >10.14421081</attribute>
-<attribute name="Xpos" >-5.191691019</attribute>
-<attribute name="Ypos" >-5.646747931</attribute>
-<text >In vain, great-hearted Kublai, shall I attempt to describe Zaira, city of high bastions. I could tell you how many steps make up the streets rising like stairways, and the degree of the arcades&apos; curves, and what kind of zinc scales cover the roofs; but I already know this would be the same as telling you nothing. The city does not consist of this, but of relationships between the measurements of its space and the events of its past: the height of a lamppost and the distance from the ground of a hanged usurper&apos;s swaying feet; the line strung from the lamPPOSt to the railing opposite and the festoons that decorate the course of the queen&apos;s nuptial procession; the height of that railing and the leap of the adulterer who climbed over it at dawn; the tilt of a guttering and a eat&apos;s progress along it as he slips into the same window; the firing range of a gunboat which has suddenly appeared beyond the cape and the bomb that destroys the guttering; the rips in the fish net and the three old men seated on the dock mending nets and telling each other for the hundredth time the Story of the gun- 10 boat of the usurper, who some say was the queen&apos;s illegitimate son, abandoned in his swaddling clothes there on the dock. As this wave from memories flows in, the city soaks it up like a sponge and expands. A description of Zaira as it is today should contain all Zaira&apos;s past. The city, however, does not tell its past, but contains it like the lines of a hand, written in the corners of the streets, the gratings of the windows, the banisters of the steps, the antennae of the lightning rods, the poles of the Bags, every segment marked in turn with scratches, indentations, scrolls.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC5dBwAAKwAAAAEAAABVBwAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBJbiB2YWluLCBncmVhdC1oZWFydGVkIEt1YmxhaSwgc2hhbGwgSSBhdHRlbXB0IHRvIGRlc2NyaWJlIFphaXJhLCBjaXR5IG9mIGhpZ2ggYmFzdGlvbnMuIEkgY291bGQgdGVsbCB5b3UgaG93IG1hbnkgc3RlcHMgbWFrZSB1cCB0aGUgc3RyZWV0cyByaXNpbmcgbGlrZSBzdGFpcndheXMsIGFuZCB0aGUgZGVncmVlIG9mIHRoZSBhcmNhZGVzJyBjdXJ2ZXMsIGFuZCB3aGF0IGtpbmQgb2YgemluYyBzY2FsZXMgY292ZXIgdGhlIHJvb2ZzOyBidXQgSSBhbHJlYWR5IGtub3cgdGhpcyB3b3VsZCBiZSB0aGUgc2FtZSBhcyB0ZWxsaW5nIHlvdSBub3RoaW5nLiBUaGUgY2l0eSBkb2VzIG5vdCBjb25zaXN0IG9mIHRoaXMsIGJ1dCBvZiByZWxhdGlvbnNoaXBzIGJldHdlZW4gdGhlIG1lYXN1cmVtZW50cyBvZiBpdHMgc3BhY2UgYW5kIHRoZSBldmVudHMgb2YgaXRzIHBhc3Q6IHRoZSBoZWlnaHQgb2YgYSBsYW1wcG9zdCBhbmQgdGhlIGRpc3RhbmNlIGZyb20gdGhlIGdyb3VuZCBvZiBhIGhhbmdlZCB1c3VycGVyJ3Mgc3dheWluZyBmZWV0OyB0aGUgbGluZSBzdHJ1bmcgZnJvbSB0aGUgbGFtUFBPU3QgdG8gdGhlIHJhaWxpbmcgb3Bwb3NpdGUgYW5kIHRoZSBmZXN0b29ucyB0aGF0IGRlY29yYXRlIHRoZSBjb3Vyc2Ugb2YgdGhlIHF1ZWVuJ3MgbnVwdGlhbCBwcm9jZXNzaW9uOyB0aGUgaGVpZ2h0IG9mIHRoYXQgcmFpbGluZyBhbmQgdGhlIGxlYXAgb2YgdGhlIGFkdWx0ZXJlciB3aG8gY2xpbWJlZCBvdmVyIGl0IGF0IGRhd247IHRoZSB0aWx0IG9mIGEgZ3V0dGVyaW5nIGFuZCBhIGVhdCdzIHByb2dyZXNzIGFsb25nIGl0IGFzIGhlIHNsaXBzIGludG8gdGhlIHNhbWUgd2luZG93OyB0aGUgZmlyaW5nIHJhbmdlIG9mIGEgZ3VuYm9hdCB3aGljaCBoYXMgc3VkZGVubHkgYXBwZWFyZWQgYmV5b25kIHRoZSBjYXBlIGFuZCB0aGUgYm9tYiB0aGF0IGRlc3Ryb3lzIHRoZSBndXR0ZXJpbmc7IHRoZSByaXBzIGluIHRoZSBmaXNoIG5ldCBhbmQgdGhlIHRocmVlIG9sZCBtZW4gc2VhdGVkIG9uIHRoZSBkb2NrIG1lbmRpbmcgbmV0cyBhbmQgdGVsbGluZyBlYWNoIG90aGVyIGZvciB0aGUgaHVuZHJlZHRoIHRpbWUgdGhlIFN0b3J5IG9mIHRoZSBndW4tIDEwIGJvYXQgb2YgdGhlIHVzdXJwZXIsIHdobyBzb21lIHNheSB3YXMgdGhlIHF1ZWVuJ3MgaWxsZWdpdGltYXRlIHNvbiwgYWJhbmRvbmVkIGluIGhpcyBzd2FkZGxpbmcgY2xvdGhlcyB0aGVyZSBvbiB0aGUgZG9jay4gQXMgdGhpcyB3YXZlIGZyb20gbWVtb3JpZXMgZmxvd3MgaW4sIHRoZSBjaXR5IHNvYWtzIGl0IHVwIGxpa2UgYSBzcG9uZ2UgYW5kIGV4cGFuZHMuIEEgZGVzY3JpcHRpb24gb2YgWmFpcmEgYXMgaXQgaXMgdG9kYXkgc2hvdWxkIGNvbnRhaW4gYWxsIFphaXJhJ3MgcGFzdC4gVGhlIGNpdHksIGhvd2V2ZXIsIGRvZXMgbm90IHRlbGwgaXRzIHBhc3QsIGJ1dCBjb250YWlucyBpdCBsaWtlIHRoZSBsaW5lcyBvZiBhIGhhbmQsIHdyaXR0ZW4gaW4gdGhlIGNvcm5lcnMgb2YgdGhlIHN0cmVldHMsIHRoZSBncmF0aW5ncyBvZiB0aGUgd2luZG93cywgdGhlIGJhbmlzdGVycyBvZiB0aGUgc3RlcHMsIHRoZSBhbnRlbm5hZSBvZiB0aGUgbGlnaHRuaW5nIHJvZHMsIHRoZSBwb2xlcyBvZiB0aGUgQmFncywgZXZlcnkgc2VnbWVudCBtYXJrZWQgaW4gdHVybiB3aXRoIHNjcmF0Y2hlcywgaW5kZW50YXRpb25zLCBzY3JvbGxzLn0BAAAAIwAAAAEAAAAHAAAAVFhULnJ0ZhAAAABGdB5WtgEAAAAAAAAAAAAA</rtfd>
-</item>
-<item ID="1444836963" Creator="Overboard89" >
-<attribute name="Created" >2015-10-14T11:36:02-04:00</attribute>
-<attribute name="Modified" >2015-10-14T11:36:02-04:00</attribute>
-<attribute name="Name" >Italian Text</attribute>
-<attribute name="SelectionCount" >2</attribute>
-<attribute name="Visits" >3</attribute>
-<attribute name="Xpos" >-1.283911313</attribute>
-<attribute name="Ypos" >3.914015439</attribute>
-</item>
-</item>
-<item ID="1445274867" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:14:26-04:00</attribute>
-<attribute name="Height" >3.89982697</attribute>
-<attribute name="MapScrollX" >2.011388999</attribute>
-<attribute name="MapScrollY" >0</attribute>
-<attribute name="Modified" >2015-10-19T13:14:26-04:00</attribute>
-<attribute name="Name" >...</attribute>
-<attribute name="SelectionCount" >7</attribute>
-<attribute name="Visits" >11</attribute>
-<attribute name="Width" >2.963625492</attribute>
-<attribute name="Xpos" >-3.172660236</attribute>
-<attribute name="Ypos" >1.394224431</attribute>
-<item ID="1445274892" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:14:51-04:00</attribute>
-<attribute name="Height" >7.969904613</attribute>
-<attribute name="Modified" >2015-10-19T13:16:55-04:00</attribute>
-<attribute name="Name" >English text</attribute>
-<attribute name="SelectionCount" >4</attribute>
-<attribute name="Visits" >3</attribute>
-<attribute name="Width" >9.757338954</attribute>
-<attribute name="Xpos" >-11.10824868</attribute>
-<attribute name="Ypos" >-16.59429278</attribute>
-<text >Kublai Khan ekes not necessarily believe everything Marco Polo says when he describes the cities visited on his expeditions, but the emperor of the Tartars does continue listening 10 the young Venetian with greater attention and curiosity than he shows any other messenger or explorer of his. In the lives of emperors there is a moment which follows pride in the boundless extension of the territories we have conquered, and the melancholy and relief of knowing we shall soon give up any thought of knowing and understanding them. There is a sense of emptiness that comes over us at evening, with the odor of the elephants after the rain and the sandalwood ashes growing cold in the braziers, a dizziness that makes rivers and mountains tremble on the fallow curves of the planispheres where they are portrayed, and rolls up, one after the other, the despatches announcing to us the collapse of the last enemy troops, from defeat to defeat, and flakes the wax of the seals of obscure kings who beseech our armies&apos; protection, offering in exchange annual tributes of precious metals, tanned hides, anti tortoise shell. It is the desperate moment when we discover that this empire, which had seemed to us the sum of all wonders, is an endless, formless ruin, that corruption’s gangrene has spread too far to be healed by our scepter, that the triumph over enemy sovereigns has made us the heirs of their long undoing. Only in Marco Polo&apos;s accounts was Kublai Khan able to discern, through the walls and towers destined to crumble, the tracery of a pattern so subtle it could escape the termites&apos; gnawing.</text>
-<rtfd >cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRmAQAAAC4HBwAAKwAAAAEAAAD/BgAAe1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMjY1XGNvY29hc3VicnRmMjEwCntcZm9udHRibFxmMFxmcm9tYW5cZmNoYXJzZXQwIFRpbWVzLVJvbWFuO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQpcZGVmdGFiNzIwClxwYXJkXHBhcmRlZnRhYjcyMFxyaTQwMAoKXGYwXGZzMjQgXGNmMCBLdWJsYWkgS2hhbiBla2VzIG5vdCBuZWNlc3NhcmlseSBiZWxpZXZlIGV2ZXJ5dGhpbmcgTWFyY28gUG9sbyBzYXlzIHdoZW4gaGUgZGVzY3JpYmVzIHRoZSBjaXRpZXMgdmlzaXRlZCBvbiBoaXMgZXhwZWRpdGlvbnMsIGJ1dCB0aGUgZW1wZXJvciBvZiB0aGUgVGFydGFycyBkb2VzIGNvbnRpbnVlIGxpc3RlbmluZyAxMCB0aGUgeW91bmcgVmVuZXRpYW4gd2l0aCBncmVhdGVyIGF0dGVudGlvbiBhbmQgY3VyaW9zaXR5IHRoYW4gaGUgc2hvd3MgYW55IG90aGVyIG1lc3NlbmdlciBvciBleHBsb3JlciBvZiBoaXMuIEluIHRoZSBsaXZlcyBvZiBlbXBlcm9ycyB0aGVyZSBpcyBhIG1vbWVudCB3aGljaCBmb2xsb3dzIHByaWRlIGluIHRoZSBib3VuZGxlc3MgZXh0ZW5zaW9uIG9mIHRoZSB0ZXJyaXRvcmllcyB3ZSBoYXZlIGNvbnF1ZXJlZCwgYW5kIHRoZSBtZWxhbmNob2x5IGFuZCByZWxpZWYgb2Yga25vd2luZyB3ZSBzaGFsbCBzb29uIGdpdmUgdXAgYW55IHRob3VnaHQgb2Yga25vd2luZyBhbmQgdW5kZXJzdGFuZGluZyB0aGVtLiBUaGVyZSBpcyBhIHNlbnNlIG9mIGVtcHRpbmVzcyB0aGF0IGNvbWVzIG92ZXIgdXMgYXQgZXZlbmluZywgd2l0aCB0aGUgb2RvciBvZiB0aGUgZWxlcGhhbnRzIGFmdGVyIHRoZSByYWluIGFuZCB0aGUgc2FuZGFsd29vZCBhc2hlcyBncm93aW5nIGNvbGQgaW4gdGhlIGJyYXppZXJzLCBhIGRpenppbmVzcyB0aGF0IG1ha2VzIHJpdmVycyBhbmQgbW91bnRhaW5zIHRyZW1ibGUgb24gdGhlIGZhbGxvdyBjdXJ2ZXMgb2YgdGhlIHBsYW5pc3BoZXJlcyB3aGVyZSB0aGV5IGFyZSBwb3J0cmF5ZWQsIGFuZCByb2xscyB1cCwgb25lIGFmdGVyIHRoZSBvdGhlciwgdGhlIGRlc3BhdGNoZXMgYW5ub3VuY2luZyB0byB1cyB0aGUgY29sbGFwc2Ugb2YgdGhlIGxhc3QgZW5lbXkgdHJvb3BzLCBmcm9tIGRlZmVhdCB0byBkZWZlYXQsIGFuZCBmbGFrZXMgdGhlIHdheCBvZiB0aGUgc2VhbHMgb2Ygb2JzY3VyZSBraW5ncyB3aG8gYmVzZWVjaCBvdXIgYXJtaWVzJyBwcm90ZWN0aW9uLCBvZmZlcmluZyBpbiBleGNoYW5nZSBhbm51YWwgdHJpYnV0ZXMgb2YgcHJlY2lvdXMgbWV0YWxzLCB0YW5uZWQgaGlkZXMsIGFudGkgdG9ydG9pc2Ugc2hlbGwuIEl0IGlzIHRoZSBkZXNwZXJhdGUgbW9tZW50IHdoZW4gd2UgZGlzY292ZXIgdGhhdCB0aGlzIGVtcGlyZSwgd2hpY2ggaGFkIHNlZW1lZCB0byB1cyB0aGUgc3VtIG9mIGFsbCB3b25kZXJzLCBpcyBhbiBlbmRsZXNzLCBmb3JtbGVzcyBydWluLCB0aGF0IGNvcnJ1cHRpb25cJzkycyBnYW5ncmVuZSBoYXMgc3ByZWFkIHRvbyBmYXIgdG8gYmUgaGVhbGVkIGJ5IG91ciBzY2VwdGVyLCB0aGF0IHRoZSB0cml1bXBoIG92ZXIgZW5lbXkgc292ZXJlaWducyBoYXMgbWFkZSB1cyB0aGUgaGVpcnMgb2YgdGhlaXIgbG9uZyB1bmRvaW5nLiBPbmx5IGluIE1hcmNvIFBvbG8ncyBhY2NvdW50cyB3YXMgS3VibGFpIEtoYW4gYWJsZSB0byBkaXNjZXJuLCB0aHJvdWdoIHRoZSB3YWxscyBhbmQgdG93ZXJzIGRlc3RpbmVkIHRvIGNydW1ibGUsIHRoZSB0cmFjZXJ5IG9mIGEgcGF0dGVybiBzbyBzdWJ0bGUgaXQgY291bGQgZXNjYXBlIHRoZSB0ZXJtaXRlcycgZ25hd2luZy59AQAAACMAAAABAAAABwAAAFRYVC5ydGYQAAAAhyUlVrYBAAAAAAAAAAAAAA==</rtfd>
-</item>
-<item ID="1445275805" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:30:04-04:00</attribute>
-<attribute name="Modified" >2015-10-19T13:31:57-04:00</attribute>
-<attribute name="Name" >untitled</attribute>
-<attribute name="SelectionCount" >1</attribute>
-<attribute name="Visits" >1</attribute>
-<attribute name="Xpos" >-2.460898565</attribute>
-<attribute name="Ypos" >3.228665532</attribute>
-</item>
-</item>
-<item ID="1445275100" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:18:19-04:00</attribute>
-<attribute name="Height" >3.938363535</attribute>
-<attribute name="Modified" >2015-10-19T13:18:19-04:00</attribute>
-<attribute name="Name" >Cities and Memory</attribute>
-<attribute name="SelectionCount" >1</attribute>
-<attribute name="Visits" >1</attribute>
-<attribute name="Width" >2.788560822</attribute>
-<attribute name="Xpos" >2.20499698</attribute>
-<attribute name="Ypos" >-4.407485246</attribute>
-</item>
-<item ID="1445275101" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:18:19-04:00</attribute>
-<attribute name="Height" >3.938363535</attribute>
-<attribute name="Modified" >2015-10-19T13:18:19-04:00</attribute>
-<attribute name="Name" >Cities and Desire</attribute>
-<attribute name="SelectionCount" >2</attribute>
-<attribute name="Visits" >2</attribute>
-<attribute name="Width" >2.788560822</attribute>
-<attribute name="Xpos" >7.361083984</attribute>
-<attribute name="Ypos" >1.394224431</attribute>
-</item>
-<item ID="1445275136" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:18:19-04:00</attribute>
-<attribute name="Height" >3.938363535</attribute>
-<attribute name="Modified" >2015-10-19T13:18:19-04:00</attribute>
-<attribute name="Name" >Cities and Signs</attribute>
-<attribute name="SelectionCount" >2</attribute>
-<attribute name="Visits" >2</attribute>
-<attribute name="Width" >2.788560822</attribute>
-<attribute name="Xpos" >12.78099695</attribute>
-<attribute name="Ypos" >7.107615942</attribute>
-</item>
-<item ID="1445275155" Creator="Overboard89" >
-<attribute name="Created" >2015-10-19T13:18:19-04:00</attribute>
-<attribute name="Height" >3.938363535</attribute>
-<attribute name="Modified" >2015-10-19T13:18:19-04:00</attribute>
-<attribute name="Name" >Thin Cities</attribute>
-<attribute name="SelectionCount" >2</attribute>
-<attribute name="Visits" >2</attribute>
-<attribute name="Width" >2.788560822</attribute>
-<attribute name="Xpos" >17.97998945</attribute>
-<attribute name="Ypos" >12.63309659</attribute>
-</item>
-</item>
-<links >
-<link name="Linear Reading" sourceid="1444239604" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1444240198" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1444240198" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1444239641" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1444239641" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1444836367" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1444836367" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1444836143" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1444836143" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1444837040" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1444837040" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1444837226" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1444837226" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1444837479" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1444837479" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1445274626" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1445274626" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1445274634" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1445274867" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1444239604" destcreator="Overboard89" color="black"  />
-<link name="Linear Reading" sourceid="1445274634" sourcecreator="Overboard89" sstart="-1" slen="0" style="0" arrowtype="0" labelx="0" labely="0" linkWidth="1" destid="1445275156" destcreator="Overboard89" color="black"  />
-</links>
-<macros >
-</macros>
-<preferences >
-<Creator > Overboard89</Creator>
-<ToolbarVisible > 1</ToolbarVisible>
-<OpenTextImmediately > 0</OpenTextImmediately>
-<Tinderbox5Wizard > 1</Tinderbox5Wizard>
-<DynamicSpelling > 0</DynamicSpelling>
-<AutoOpen > 1</AutoOpen>
-<AutomaticBackup > 1</AutomaticBackup>
-<ReopenLastDocument > 0</ReopenLastDocument>
-<Autosave > 0</Autosave>
-<KeepWindowsOpen > 1</KeepWindowsOpen>
-<LeftMargin > 2</LeftMargin>
-<RightMargin > -2</RightMargin>
-<ParagraphSpacing > 4</ParagraphSpacing>
-<TextFont > HoeflerText-Regular</TextFont>
-<TextSize > 5</TextSize>
-<TextJust > 0</TextJust>
-<AlwaysShowTextLinks > 1</AlwaysShowTextLinks>
-<ShowWikiLinks > 1</ShowWikiLinks>
-<TextLinkFrames > 1</TextLinkFrames>
-<TextLinkColorString > #0066cc</TextLinkColorString>
-<TextBackgroundColorString > white</TextBackgroundColorString>
-<SmartQuotes > 1</SmartQuotes>
-<TextWindowWidth > 6</TextWindowWidth>
-<TextWindowHeight > 6</TextWindowHeight>
-<AutoIndentLists > 1</AutoIndentLists>
-<ShowTitle > 0</ShowTitle>
-<TitleFont > HelveticaNeue</TitleFont>
-<TitleSize > 2</TitleSize>
-<TitleJust > 2</TitleJust>
-<MapShowLinks > 1</MapShowLinks>
-<MapEnacted > 1</MapEnacted>
-<InPlaceEditing > 1</InPlaceEditing>
-<MapLabelSize > 4</MapLabelSize>
-<MapBackgroundColorString > #f2f2ed</MapBackgroundColorString>
-<MapBackgroundColorString2 > #f2f2ed</MapBackgroundColorString2>
-<OpaqueAdornments > 0</OpaqueAdornments>
-<MapBackgroundPattern > plain</MapBackgroundPattern>
-<PrototypeHighlightColorString > #cceecc</PrototypeHighlightColorString>
-<MapFont > HelveticaNeue</MapFont>
-<DarkenOutlineColors > 1</DarkenOutlineColors>
-<BlackOutlineText > 0</BlackOutlineText>
-<UnderlineAliases > 0</UnderlineAliases>
-<AutomaticLinkDetection > 1</AutomaticLinkDetection>
-<HiddenTabBar > 0</HiddenTabBar>
-<TextPaneSelectorHidden > 1</TextPaneSelectorHidden>
-<OutlineLeading > 2</OutlineLeading>
-<InteriorScale > 1</InteriorScale>
-<InteriorScaleNew > 1.5</InteriorScaleNew>
-<ExpandMode > 1</ExpandMode>
-<AfterLinkingSelect > 2</AfterLinkingSelect>
-<ExportImageFormat > 1</ExportImageFormat>
-<ExportURL > http://</ExportURL>
-<ExportHTMLHelper > Safari</ExportHTMLHelper>
-<ExportHTMLExtension > 1</ExportHTMLExtension>
-<HTMLParagraphStyle > 1</HTMLParagraphStyle>
-<HTMLViewFont > Lucide Grande</HTMLViewFont>
-<HTMLViewFontSize > 2</HTMLViewFontSize>
-<ExportTemplatePath > plain</ExportTemplatePath>
-<RoadmapWindowWidth > 0</RoadmapWindowWidth>
-<RoadmapWindowHeight > 0</RoadmapWindowHeight>
-<TextExportViewFont > Lucide Grande</TextExportViewFont>
-<TextExportViewFontSize > 2</TextExportViewFontSize>
-<ExportTextTemplatePath > outline</ExportTextTemplatePath>
-<ExportTextHelper > TextEdit</ExportTextHelper>
-<AskToDelete > 2</AskToDelete>
-<DailyTip > 1</DailyTip>
-<WarnEditingDefault > 1</WarnEditingDefault>
-<WarnDuplicateName > 1</WarnDuplicateName>
-<RunScriptsAutomatically > 1</RunScriptsAutomatically>
-<Version > version 6.6.2</Version>
-<PreferencePane > 0</PreferencePane>
-<LastBadgeFamily > 1</LastBadgeFamily>
-<TipWindowX > 300</TipWindowX>
-<TipWindowY > 50</TipWindowY>
-<RegUserName > </RegUserName>
-<RegUserOrg > </RegUserOrg>
-<CurrentAttributeClass > </CurrentAttributeClass>
-<CurrentAttribute > </CurrentAttribute>
-<FindCaseSensitive > 1</FindCaseSensitive>
-<ExportFolder > /Users/Overboard89/Documents/trial export</ExportFolder>
-<ReadOnly > 0</ReadOnly>
-<InfoWindowHeight > 0</InfoWindowHeight>
-<InfoWindowWidth > 0</InfoWindowWidth>
-<RecentFiles > </RecentFiles>
-<PingServer > http://rpc.weblogs.com/RPC2</PingServer>
-<PingMethod > weblogUpdates.ping</PingMethod>
-<PingTitle > your weblog name</PingTitle>
-<PingURL > weblog URL</PingURL>
-<PingTechnorati > 1</PingTechnorati>
-<PingWeblogsCom > 1</PingWeblogsCom>
-<PingGoogle > 1</PingGoogle>
-<PingFeedURL > </PingFeedURL>
-<WeblogServer > http://your_host/cgi-bin/mt/mt-xmlrpc.cgi</WeblogServer>
-<WeblogUser > </WeblogUser>
-<WeblogPassword > </WeblogPassword>
-<WeblogID > 1</WeblogID>
-<WeblogKind > 2</WeblogKind>
-<ToolbarKind > 0</ToolbarKind>
-<ReadingReminders > 0</ReadingReminders>
-<AllowViews > 1</AllowViews>
-<AutomaticAgentUpdate > 1</AutomaticAgentUpdate>
-<ToolbarX > 0</ToolbarX>
-<ToolbarY > 0</ToolbarY>
-<FindWindowX > 600</FindWindowX>
-<FindWindowY > 100</FindWindowY>
-<RenameWindowX > -1</RenameWindowX>
-<RenameWindowY > -1</RenameWindowY>
-<InspectorX > 1140</InspectorX>
-<InspectorY > 377</InspectorY>
-<EnterKeyAction > 0</EnterKeyAction>
-<UpdateViewShown > </UpdateViewShown>
-<TimelineScale > 1000</TimelineScale>
-<TimelineLabelSize > 0</TimelineLabelSize>
-<GetInfoPane > </GetInfoPane>
-<GetInfoCategory > </GetInfoCategory>
-<GetInfoSelection > </GetInfoSelection>
-<LastLinkName > Linear Reading</LastLinkName>
-<UsingGuides > 1</UsingGuides>
-<SystemAttributesCategory > </SystemAttributesCategory>
-<SystemAttributesSelection > </SystemAttributesSelection>
-<CheckMail > 0</CheckMail>
-<MailHost > </MailHost>
-<MailUser > </MailUser>
-<MailPassword > </MailPassword>
-<CheckSimplenote > 0</CheckSimplenote>
-<SimplenoteEmail > </SimplenoteEmail>
-<SimplenotePassword > </SimplenotePassword>
-<SimplenoteTag > </SimplenoteTag>
-<MapBackgroundColor > 0 0 0</MapBackgroundColor>
-<MapBackgroundColor2 > 0 0 0</MapBackgroundColor2>
-<TextColor > 0 0 0</TextColor>
-<TextBackgroundColor > 65535 65535 65535</TextBackgroundColor>
-<TitleBackgroundColor > 0 0 0</TitleBackgroundColor>
-<TitleForegroundColor > 65535 65535 65535</TitleForegroundColor>
-<ActiveLinkColor > 65535 0 0</ActiveLinkColor>
-<VisitedLinkColor > 26112 0 52224</VisitedLinkColor>
-<MagnifyFonts > 1</MagnifyFonts>
-<MagnifyPictures > 1</MagnifyPictures>
-<RememberWindowPositions > 1</RememberWindowPositions>
-<ExportHTMLCreator > 1</ExportHTMLCreator>
-<ExportTextCreator > 1</ExportTextCreator>
-<ShowSidebar > 1</ShowSidebar>
-<MapPrototypeColor > 52428 61166 52428</MapPrototypeColor>
-<TextLinkColor > 0 26112 52224</TextLinkColor>
-<LastVersionString > </LastVersionString>
-<ExplodeDelimiter > </ExplodeDelimiter>
-</preferences>
-<windows >
-<window bounds="Rect[ 251 145 1382 824]" ruler="0" >
-<tabs >
-<tab selected="1" viewType="0" usingCheckboxes="0" showColumns="0" columnString="" scale="14.465" ID="1444239589" scrollX="172" scrollY="431.5" selection="1444240198 " expanded="" textTab="0" attribute="" sortAttribute="" container="" query="" queryLabel="" action="" actionLabel="" summaryAttribute="" summaryMethod="" splitRatio="0.00795756" treemapExpression="" treemapColorExpression="" treemapBorderColorExpression="$Color" treemapColorStart="#fffef9100" treemapColorEnd="#ccd5bf100"  />
-<tab selected="0" viewType="1" usingCheckboxes="0" showColumns="0" columnString="" scale="32" ID="1444239589" scrollX="0" scrollY="0" selection="" expanded="" textTab="0" attribute="" sortAttribute="" container="" query="" queryLabel="" action="" actionLabel="" summaryAttribute="" summaryMethod="" splitRatio="0.5" treemapExpression="" treemapColorExpression="" treemapBorderColorExpression="$Color" treemapColorStart="#fffef9100" treemapColorEnd="#ccd5bf100"  />
-</tabs>
-</window>
-</windows>
-<utilityWindows >
-</utilityWindows>
-<searches >
-</searches>
-</tinderbox>

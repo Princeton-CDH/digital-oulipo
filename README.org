@@ -4,7 +4,7 @@ The code contained in this repository is the result of a year-long independent, 
 
 * Link to CDH website and any other public facing project website
 
-** CDH Website: https://digitalhumanities.princeton.edu/digital-oulipo/
+** CDH Website: https://cdh.princeton.edu/projects/digital-oulipo/
 ** Personal Website, Digital Humanities: https://natalieberkman.commons.mla.org/digital-humanities/
 ** Personal Website, Digital Oulipo: https://natalieberkman.commons.mla.org/digital-humanities/digital-oulipo-project/
 ** Blog, Post #1 The Plan: https://natalieberkman.commons.mla.org/digital-oulipo-the-plan/
